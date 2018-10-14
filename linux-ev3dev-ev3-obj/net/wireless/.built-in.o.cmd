@@ -1,0 +1,1 @@
+cmd_net/wireless/built-in.o :=  rm -f net/wireless/built-in.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD net/wireless/built-in.o net/wireless/wext-core.o net/wireless/wext-proc.o net/wireless/wext-priv.o 

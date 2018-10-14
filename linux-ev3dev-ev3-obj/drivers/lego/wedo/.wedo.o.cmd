@@ -1,0 +1,1 @@
+cmd_drivers/lego/wedo/wedo.o := /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ld -EL    -r -o drivers/lego/wedo/wedo.o drivers/lego/wedo/wedo_hub.o drivers/lego/wedo/wedo_port.o drivers/lego/wedo/wedo_sensor.o drivers/lego/wedo/wedo_motor.o drivers/lego/wedo/wedo_servo.o 

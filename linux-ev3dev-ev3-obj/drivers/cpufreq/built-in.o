@@ -1,0 +1,11 @@
+!<thin>
+//                                              68        `
+cpufreq.o/
+freq_table.o/
+cpufreq_performance.o/
+davinci-cpufreq.o/
+
+/0              0           0     0     644     49980     `
+/11             0           0     0     644     8476      `
+/25             0           0     0     644     2256      `
+/48             0           0     0     644     3096      `

@@ -1,0 +1,1 @@
+cmd_kernel/cgroup/built-in.o :=  rm -f kernel/cgroup/built-in.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD kernel/cgroup/built-in.o kernel/cgroup/cgroup.o kernel/cgroup/namespace.o kernel/cgroup/cgroup-v1.o 

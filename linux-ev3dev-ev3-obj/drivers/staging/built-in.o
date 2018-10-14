@@ -1,0 +1,73 @@
+!<thin>
+//                                              818       `
+rtl8712/rtl871x_cmd.o/
+rtl8712/rtl8712_cmd.o/
+rtl8712/rtl871x_security.o/
+rtl8712/rtl871x_eeprom.o/
+rtl8712/rtl8712_efuse.o/
+rtl8712/hal_init.o/
+rtl8712/usb_halinit.o/
+rtl8712/usb_ops.o/
+rtl8712/usb_ops_linux.o/
+rtl8712/rtl871x_io.o/
+rtl8712/rtl8712_io.o/
+rtl8712/rtl871x_ioctl_linux.o/
+rtl8712/rtl871x_ioctl_rtl.o/
+rtl8712/rtl871x_ioctl_set.o/
+rtl8712/rtl8712_led.o/
+rtl8712/rtl871x_mlme.o/
+rtl8712/ieee80211.o/
+rtl8712/rtl871x_mp_ioctl.o/
+rtl8712/rtl871x_mp.o/
+rtl8712/mlme_linux.o/
+rtl8712/recv_linux.o/
+rtl8712/xmit_linux.o/
+rtl8712/usb_intf.o/
+rtl8712/os_intfs.o/
+rtl8712/rtl871x_pwrctrl.o/
+rtl8712/rtl8712_recv.o/
+rtl8712/rtl871x_recv.o/
+rtl8712/rtl871x_sta_mgt.o/
+rtl8712/rtl871x_xmit.o/
+rtl8712/rtl8712_xmit.o/
+fbtft/fbtft-core.o/
+fbtft/fbtft-sysfs.o/
+fbtft/fbtft-bus.o/
+fbtft/fbtft-io.o/
+fbtft/fb_st7735r.o/
+
+/0              0           0     0     644     11444     `
+/23             0           0     0     644     6264      `
+/46             0           0     0     644     13188     `
+/74             0           0     0     644     3164      `
+/100           /0           0     0     644     5888      `
+/125            0           0     0     644     5332      `
+/145            0           0     0     644     4784      `
+/168            0           0     0     644     2356      `
+/187           /0           0     0     644     5872      `
+/212            0           0     0     644     1804      `
+/234            0           0     0     644     1472      `
+/256            0           0     0     644     24440     `
+/287            0           0     0     644     6340      `
+/316            0           0     0     644     3936      `
+/345            0           0     0     644     13096     `
+/368            0           0     0     644     14816     `
+/392            0           0     0     644     4880      `
+/413            0           0     0     644     10868     `
+/441            0           0     0     644     7024      `
+/463            0           0     0     644     3284      `
+/485            0           0     0     644     2288      `
+/507            0           0     0     644     2944      `
+/529            0           0     0     644     9352      `
+/549            0           0     0     644     9724      `
+/569            0           0     0     644     3292      `
+/596            0           0     0     644     9184      `
+/620            0           0     0     644     6716      `
+/644            0           0     0     644     4256      `
+/671            0           0     0     644     9936      `
+/695            0           0     0     644     4112      `
+/719            0           0     0     644     25388     `
+/739            0           0     0     644     3832      `
+/760            0           0     0     644     8548      `
+/779            0           0     0     644     7388      `
+/797            0           0     0     644     4424      `

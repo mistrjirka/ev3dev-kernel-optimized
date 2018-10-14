@@ -1,0 +1,2 @@
+kernel/drivers/hid/hid-sony.ko
+kernel/drivers/hid/hid-wiimote.ko

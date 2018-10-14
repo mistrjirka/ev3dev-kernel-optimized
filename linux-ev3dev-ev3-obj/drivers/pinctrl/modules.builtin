@@ -1,0 +1,2 @@
+kernel/drivers/pinctrl/pinctrl-da850-pupd.ko
+kernel/drivers/pinctrl/pinctrl-single.ko

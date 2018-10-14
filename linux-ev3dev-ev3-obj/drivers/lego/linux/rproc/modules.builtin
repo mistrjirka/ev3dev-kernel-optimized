@@ -1,0 +1,3 @@
+kernel/drivers/lego/linux/rproc/ti_pru_intc.ko
+kernel/drivers/lego/linux/rproc/ti_pru_rproc.ko
+kernel/drivers/lego/linux/rproc/ti_pruss.ko

@@ -1,0 +1,1 @@
+cmd_fs/nfs/nfsv3.o := /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ld -EL    -r -o fs/nfs/nfsv3.o fs/nfs/nfs3super.o fs/nfs/nfs3client.o fs/nfs/nfs3proc.o fs/nfs/nfs3xdr.o fs/nfs/nfs3acl.o 

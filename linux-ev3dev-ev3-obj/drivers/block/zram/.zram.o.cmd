@@ -1,0 +1,1 @@
+cmd_drivers/block/zram/zram.o := rm -f drivers/block/zram/zram.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD drivers/block/zram/zram.o drivers/block/zram/zcomp.o drivers/block/zram/zram_drv.o

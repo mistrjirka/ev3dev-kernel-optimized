@@ -1,0 +1,1 @@
+cmd_firmware/built-in.o :=  rm -f firmware/built-in.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD firmware/built-in.o firmware/PRU_SUART.bin.gen.o firmware/ev3-pru1.fw.gen.o 

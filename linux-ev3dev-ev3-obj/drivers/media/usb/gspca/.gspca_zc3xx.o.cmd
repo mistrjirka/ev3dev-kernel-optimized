@@ -1,0 +1,1 @@
+cmd_drivers/media/usb/gspca/gspca_zc3xx.o := /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ld -EL    -r -o drivers/media/usb/gspca/gspca_zc3xx.o drivers/media/usb/gspca/zc3xx.o 

@@ -1,0 +1,1 @@
+cmd_drivers/usb/gadget/legacy/g_midi.o := /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ld -EL    -r -o drivers/usb/gadget/legacy/g_midi.o drivers/usb/gadget/legacy/gmidi.o 

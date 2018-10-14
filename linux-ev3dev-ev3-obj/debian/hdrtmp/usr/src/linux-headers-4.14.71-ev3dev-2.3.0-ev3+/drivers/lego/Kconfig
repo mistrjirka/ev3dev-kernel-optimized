@@ -1,0 +1,152 @@
+# LEGO device drivers
+
+menuconfig LEGO_DRIVERS
+	tristate "LEGO Device Drivers"
+	help
+	  Enables support LEGO MINDSTORMS and LEGO WeDo devices
+
+if LEGO_DRIVERS
+
+menuconfig LEGOEV3_DRIVERS
+	tristate "LEGO MINDSTORMS EV3 support"
+	default y
+	help
+	  This enables platform specific drivers for the LEGO MINDSTORMS EV3
+	  hardware.
+
+if LEGOEV3_DRIVERS
+
+config LEGOEV3_BOARD
+	tristate "Board info driver for LEGO MINDSTORMS EV3"
+	default y
+	depends on GPIOLIB && NVMEM && BOARD_INFO
+	help
+	  This driver is used to get board information, like hardware ID and
+		Bluetooth MAC address.
+
+config LEGOEV3_I2C
+	tristate "I2C driver for LEGO Mindstorms EV3"
+	depends on GPIOLIB && LEGOEV3_FIQ
+	help
+	  This is a GPIO bit-banging driver for connecting to LEGO Mindstorms
+	  I2C sensors. It is not quite standard I2C.
+
+config LEGOEV3_BLUETOOTH
+	tristate "On-board Bluetooth"
+	default y
+	depends on PWM_TIECAP && GPIOLIB
+	help
+	  Select Y to enable on-board bluetooth on the LEGO MINDSTORMS EV3.
+
+config LEGOEV3_PORTS
+	tristate "EV3 input and output port support"
+	default y
+	help
+	  Select Y to enable support for EV3 input and output ports.
+
+config LEGOEV3_PRU
+	tristate "EV3 PRU support"
+	default y
+	select RPMSG_VIRTIO
+	select IIO_HRTIMER_TRIGGER
+	help
+		Select Y to enable for PRU support on the EV3.
+
+config LEGOEV3_SOUND
+	tristate "LEGO Mindstorms EV3 speaker driver"
+	depends on MACH_DAVINCI_LEGOEV3 && PWM_TIEHRPWM && LEGOEV3_FIQ
+	select SND_PCM
+	help
+	  Say Y here if you want to use the LEGO Mindstorms EV3 speaker.
+
+	  To compile this driver as a module, choose M here: the module will be
+	  called snd-legoev3.
+
+config LEGOEV3_MOTORS
+	tristate "EV3 motor support"
+	default y
+	help
+	  Select Y to enable support for EV3 motors. Provides a common device
+	  class interface for LEGO EV3 and NXT compatible motors.
+
+endif #LEGOEV3_DRIVERS
+
+config LEGO_PORTS
+	tristate "LEGO port support"
+	default y
+	help
+	  Select Y to provide support for devices that provide input and/or
+	  output port functionality that is compatible with LEGO MINDSTORMS,
+	  LEGO WeDo and LEGO Power Functions sensors and motors.
+
+config LEGO_SENSORS
+	tristate "Mindstorms sensors support"
+	default y
+	help
+	  Select Y to enable support for Mindstorms sensors. Provides a common
+	  device class interface for most types of sensors (UART sensors,
+	  LEGO-approved I2C sensors and analog sensors).
+
+config NXT_ANALOG_SENSORS
+	tristate "NXT analog sensor support"
+	default y
+	depends on LEGO_SENSORS
+	help
+	  Select Y to enable support for NXT analog sensors.
+
+config EV3_ANALOG_SENSORS
+	tristate "EV3 analog sensor support"
+	default y
+	depends on LEGO_SENSORS
+	help
+	  Select Y to enable support for EV3 analog sensors.
+
+config NXT_I2C_SENSORS
+	tristate "I2C sensor support"
+	default y
+	depends on LEGO_SENSORS
+	help
+	  Select Y to enable support for NXT I2C sensors.
+
+config EV3_UART_SENSORS
+	tristate "EV3 UART sensor support"
+	default y
+	depends on LEGO_SENSORS
+	help
+	  Select Y to enable support for EV3 UART sensors.
+
+config LEGO_TACHO_MOTORS
+	tristate "tacho motor support"
+	default y
+	help
+	  Select Y to enable support for tacho motors.
+
+config LEGO_SERVO_MOTORS
+	tristate "Servo motor support"
+	default y
+	help
+	  Select Y to enable support for servo motors.
+
+config LEGO_DC_MOTORS
+	tristate "DC motor support"
+	default y
+	help
+	  Select Y to enable support for DC motors (includes LEGO Power
+	  Functions motors).
+
+config LMS2012_COMPAT
+	tristate "lms2012 compatibility"
+	default y
+	help
+	  Select Y to enable lms2012 compatibility drivers.
+
+source "drivers/lego/wedo/Kconfig"
+
+source "drivers/lego/brickpi/Kconfig"
+source "drivers/lego/brickpi3/Kconfig"
+source "drivers/lego/pistorms/Kconfig"
+source "drivers/lego/evb/Kconfig"
+
+source "drivers/lego/linux/Kconfig"
+
+endif #LEGO_DRIVERS

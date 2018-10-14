@@ -1,0 +1,3 @@
+linux-headers-4.14.71-ev3dev-2.3.0-ev3+_1_armel.deb kernel optional
+linux-image-4.14.71-ev3dev-2.3.0-ev3+_1_armel.deb kernel optional
+linux-libc-dev_1_armel.deb devel optional

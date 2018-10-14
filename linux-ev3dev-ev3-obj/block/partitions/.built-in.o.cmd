@@ -1,0 +1,1 @@
+cmd_block/partitions/built-in.o :=  rm -f block/partitions/built-in.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD block/partitions/built-in.o block/partitions/check.o block/partitions/msdos.o 

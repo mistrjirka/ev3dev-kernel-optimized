@@ -1,0 +1,1 @@
+cmd_drivers/video/built-in.o :=  rm -f drivers/video/built-in.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD drivers/video/built-in.o drivers/video/hdmi.o drivers/video/console/built-in.o drivers/video/logo/built-in.o drivers/video/backlight/built-in.o drivers/video/fbdev/built-in.o 

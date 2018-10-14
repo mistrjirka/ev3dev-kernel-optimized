@@ -1,0 +1,1 @@
+cmd_lib/raid6/raid6_pq.ko := /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ld -EL -r  -T /home/jirka/programming/python/kernel4python3/ev3-kernel/scripts/module-common.lds --build-id  -o lib/raid6/raid6_pq.ko lib/raid6/raid6_pq.o lib/raid6/raid6_pq.mod.o ;  true

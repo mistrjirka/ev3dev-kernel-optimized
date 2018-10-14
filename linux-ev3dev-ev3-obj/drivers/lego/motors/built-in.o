@@ -1,0 +1,17 @@
+!<thin>
+//                                              122       `
+tacho_motor_class.o/
+tacho_motor_helper.o/
+dc_motor_class.o/
+ev3_motor_core.o/
+ev3_motor_defs.o/
+rcx_motor.o/
+rcx_led.o/
+
+/0              0           0     0     644     19112     `
+/21             0           0     0     644     4384      `
+/43             0           0     0     644     12304     `
+/61             0           0     0     644     3648      `
+/79             0           0     0     644     1940      `
+/97             0           0     0     644     2652      `
+/110            0           0     0     644     3184      `

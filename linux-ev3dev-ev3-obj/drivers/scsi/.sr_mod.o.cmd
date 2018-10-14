@@ -1,0 +1,1 @@
+cmd_drivers/scsi/sr_mod.o := /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ld -EL    -r -o drivers/scsi/sr_mod.o drivers/scsi/sr.o drivers/scsi/sr_ioctl.o drivers/scsi/sr_vendor.o 

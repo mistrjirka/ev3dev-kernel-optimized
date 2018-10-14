@@ -1,0 +1,1 @@
+cmd_drivers/lego/motors/built-in.o :=  rm -f drivers/lego/motors/built-in.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD drivers/lego/motors/built-in.o drivers/lego/motors/tacho_motor.o drivers/lego/motors/dc_motor_class.o drivers/lego/motors/ev3_motor.o drivers/lego/motors/rcx_motor.o drivers/lego/motors/rcx_led.o 

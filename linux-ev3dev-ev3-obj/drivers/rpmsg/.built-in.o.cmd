@@ -1,0 +1,1 @@
+cmd_drivers/rpmsg/built-in.o :=  rm -f drivers/rpmsg/built-in.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD drivers/rpmsg/built-in.o drivers/rpmsg/rpmsg_core.o drivers/rpmsg/virtio_rpmsg_bus.o 

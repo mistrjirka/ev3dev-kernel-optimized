@@ -1,0 +1,9 @@
+kernel/net/netfilter/nfnetlink.ko
+kernel/net/netfilter/nfnetlink_acct.ko
+kernel/net/netfilter/nf_conntrack.ko
+kernel/net/netfilter/nf_nat.ko
+kernel/net/netfilter/x_tables.ko
+kernel/net/netfilter/xt_tcpudp.ko
+kernel/net/netfilter/xt_connmark.ko
+kernel/net/netfilter/xt_nat.ko
+kernel/net/netfilter/xt_nfacct.ko

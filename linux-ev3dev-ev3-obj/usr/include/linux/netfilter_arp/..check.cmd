@@ -1,0 +1,1 @@
+cmd_usr/include/linux/netfilter_arp/.check := for f in arp_tables.h arpt_mangle.h ; do echo "./usr/include/linux/netfilter_arp/$${f}"; done | xargs perl /home/jirka/programming/python/kernel4python3/ev3-kernel/scripts/headers_check.pl ./usr/include arm; touch usr/include/linux/netfilter_arp/.check

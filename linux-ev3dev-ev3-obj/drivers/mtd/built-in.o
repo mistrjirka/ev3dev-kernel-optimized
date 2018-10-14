@@ -1,0 +1,23 @@
+!<thin>
+//                                              128       `
+mtdcore.o/
+mtdsuper.o/
+mtdconcat.o/
+mtdpart.o/
+mtdchar.o/
+ofpart.o/
+cmdlinepart.o/
+mtd_blkdevs.o/
+mtdblock.o/
+chips/chipreg.o/
+
+/0              0           0     0     644     41088     `
+/11             0           0     0     644     3380      `
+/23             0           0     0     644     10024     `
+/36             0           0     0     644     15668     `
+/47             0           0     0     644     12248     `
+/58             0           0     0     644     4204      `
+/68             0           0     0     644     5056      `
+/83             0           0     0     644     12676     `
+/98             0           0     0     644     5192      `
+/110            0           0     0     644     4092      `

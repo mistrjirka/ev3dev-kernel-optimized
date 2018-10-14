@@ -1,0 +1,1 @@
+cmd_usr/include/linux/hsi/.check := for f in hsi_char.h cs-protocol.h ; do echo "./usr/include/linux/hsi/$${f}"; done | xargs perl /home/jirka/programming/python/kernel4python3/ev3-kernel/scripts/headers_check.pl ./usr/include arm; touch usr/include/linux/hsi/.check

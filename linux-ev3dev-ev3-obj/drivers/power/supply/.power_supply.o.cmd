@@ -1,0 +1,1 @@
+cmd_drivers/power/supply/power_supply.o := rm -f drivers/power/supply/power_supply.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD drivers/power/supply/power_supply.o drivers/power/supply/power_supply_core.o drivers/power/supply/power_supply_sysfs.o drivers/power/supply/power_supply_leds.o

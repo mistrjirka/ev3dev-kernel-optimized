@@ -1,0 +1,1 @@
+cmd_drivers/i2c/i2c-core.o := rm -f drivers/i2c/i2c-core.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD drivers/i2c/i2c-core.o drivers/i2c/i2c-core-base.o drivers/i2c/i2c-core-smbus.o drivers/i2c/i2c-core-of.o

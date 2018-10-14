@@ -1,0 +1,1 @@
+cmd_drivers/cpufreq/built-in.o :=  rm -f drivers/cpufreq/built-in.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD drivers/cpufreq/built-in.o drivers/cpufreq/cpufreq.o drivers/cpufreq/freq_table.o drivers/cpufreq/cpufreq_performance.o drivers/cpufreq/davinci-cpufreq.o 

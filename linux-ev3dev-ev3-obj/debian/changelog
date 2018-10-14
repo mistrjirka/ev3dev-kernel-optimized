@@ -1,0 +1,5 @@
+linux-4.14.71-ev3dev-2.3.0-ev3+ (1) bionic; urgency=low
+
+  * Custom built Linux kernel.
+
+ -- Anonymous <root@jirka-System-Product-Name>  Sun, 14 Oct 2018 12:40:40 +0200

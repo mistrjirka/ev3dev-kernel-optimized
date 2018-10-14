@@ -1,0 +1,1 @@
+cmd_drivers/usb/host/built-in.o :=  rm -f drivers/usb/host/built-in.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD drivers/usb/host/built-in.o drivers/usb/host/ohci-hcd.o drivers/usb/host/ohci-da8xx.o 

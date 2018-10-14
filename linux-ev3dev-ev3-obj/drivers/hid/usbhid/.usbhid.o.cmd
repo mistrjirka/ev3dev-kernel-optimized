@@ -1,0 +1,1 @@
+cmd_drivers/hid/usbhid/usbhid.o := rm -f drivers/hid/usbhid/usbhid.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD drivers/hid/usbhid/usbhid.o drivers/hid/usbhid/hid-core.o drivers/hid/usbhid/hid-quirks.o

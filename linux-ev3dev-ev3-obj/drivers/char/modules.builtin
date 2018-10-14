@@ -1,0 +1,2 @@
+kernel/drivers/char/ttyprintk.ko
+kernel/drivers/char/hw_random/rng-core.ko

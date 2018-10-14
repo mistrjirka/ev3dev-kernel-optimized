@@ -1,0 +1,1 @@
+cmd_drivers/mmc/core/mmc_block.o := rm -f drivers/mmc/core/mmc_block.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD drivers/mmc/core/mmc_block.o drivers/mmc/core/block.o drivers/mmc/core/queue.o

@@ -1,0 +1,1 @@
+cmd_fs/cramfs/cramfs.o := rm -f fs/cramfs/cramfs.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD fs/cramfs/cramfs.o fs/cramfs/inode.o fs/cramfs/uncompress.o

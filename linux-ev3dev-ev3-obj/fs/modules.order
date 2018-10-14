@@ -1,0 +1,14 @@
+kernel/fs/nfs_common/nfs_acl.ko
+kernel/fs/nfs_common/grace.ko
+kernel/fs/nls/nls_ascii.ko
+kernel/fs/nfs/nfs.ko
+kernel/fs/nfs/nfsv2.ko
+kernel/fs/nfs/nfsv3.ko
+kernel/fs/nfs/nfsv4.ko
+kernel/fs/nfs/filelayout/nfs_layout_nfsv41_files.ko
+kernel/fs/nfs/flexfilelayout/nfs_layout_flexfiles.ko
+kernel/fs/nfsd/nfsd.ko
+kernel/fs/lockd/lockd.ko
+kernel/fs/fuse/fuse.ko
+kernel/fs/btrfs/btrfs.ko
+kernel/fs/f2fs/f2fs.ko

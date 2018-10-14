@@ -1,0 +1,1 @@
+cmd_drivers/staging/fbtft/built-in.o :=  rm -f drivers/staging/fbtft/built-in.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD drivers/staging/fbtft/built-in.o drivers/staging/fbtft/fbtft.o drivers/staging/fbtft/fb_st7735r.o 

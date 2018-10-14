@@ -1,0 +1,1 @@
+cmd_usr/include/linux/genwqe/.check := for f in genwqe_card.h ; do echo "./usr/include/linux/genwqe/$${f}"; done | xargs perl /home/jirka/programming/python/kernel4python3/ev3-kernel/scripts/headers_check.pl ./usr/include arm; touch usr/include/linux/genwqe/.check

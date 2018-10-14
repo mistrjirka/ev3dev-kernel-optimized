@@ -1,0 +1,9 @@
+kernel/drivers/lego/ev3/ev3_board.ko
+kernel/drivers/lego/ev3/legoev3_i2c.ko
+kernel/drivers/lego/ev3/legoev3_bluetooth.ko
+kernel/drivers/lego/ev3/legoev3_motor.ko
+kernel/drivers/lego/ev3/ev3_ports_core.ko
+kernel/drivers/lego/ev3/ev3_ports_in.ko
+kernel/drivers/lego/ev3/ev3_ports_out.ko
+kernel/drivers/lego/ev3/ev3_pru.ko
+kernel/drivers/lego/ev3/snd-legoev3.ko

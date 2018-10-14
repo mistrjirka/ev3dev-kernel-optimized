@@ -1,0 +1,8 @@
+menuconfig FATCATLAB_EVB
+    tristate "FatcatLab EVB support"
+    select LEGOEV3_PORTS
+    help
+      Say Y here if you want to use FatcatLab's EVB.
+
+      To compile this driver as a module, choose M here: the
+      module will be called evb.

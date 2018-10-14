@@ -1,0 +1,1 @@
+cmd_usr/include/linux/tc_ematch/.check := for f in tc_em_text.h tc_em_cmp.h tc_em_meta.h tc_em_nbyte.h ; do echo "./usr/include/linux/tc_ematch/$${f}"; done | xargs perl /home/jirka/programming/python/kernel4python3/ev3-kernel/scripts/headers_check.pl ./usr/include arm; touch usr/include/linux/tc_ematch/.check

@@ -1,0 +1,1 @@
+cmd_usr/include/linux/nfsd/.check := for f in nfsfh.h debug.h stats.h cld.h export.h ; do echo "./usr/include/linux/nfsd/$${f}"; done | xargs perl /home/jirka/programming/python/kernel4python3/ev3-kernel/scripts/headers_check.pl ./usr/include arm; touch usr/include/linux/nfsd/.check

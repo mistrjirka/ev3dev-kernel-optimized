@@ -1,0 +1,1 @@
+cmd_drivers/watchdog/watchdog.o := rm -f drivers/watchdog/watchdog.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD drivers/watchdog/watchdog.o drivers/watchdog/watchdog_core.o drivers/watchdog/watchdog_dev.o

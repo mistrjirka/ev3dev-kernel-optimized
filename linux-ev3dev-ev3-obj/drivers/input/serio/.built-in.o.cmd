@@ -1,0 +1,1 @@
+cmd_drivers/input/serio/built-in.o :=  rm -f drivers/input/serio/built-in.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD drivers/input/serio/built-in.o drivers/input/serio/serio.o drivers/input/serio/serport.o drivers/input/serio/libps2.o 

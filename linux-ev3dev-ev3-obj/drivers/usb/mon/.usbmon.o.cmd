@@ -1,0 +1,1 @@
+cmd_drivers/usb/mon/usbmon.o := rm -f drivers/usb/mon/usbmon.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD drivers/usb/mon/usbmon.o drivers/usb/mon/mon_main.o drivers/usb/mon/mon_stat.o drivers/usb/mon/mon_text.o drivers/usb/mon/mon_bin.o

@@ -1,0 +1,1 @@
+cmd_drivers/hid/hid.o := rm -f drivers/hid/hid.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD drivers/hid/hid.o drivers/hid/hid-core.o drivers/hid/hid-input.o drivers/hid/hidraw.o

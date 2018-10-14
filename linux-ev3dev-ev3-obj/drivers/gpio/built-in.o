@@ -1,0 +1,19 @@
+!<thin>
+//                                              122       `
+devres.o/
+gpiolib.o/
+gpiolib-legacy.o/
+gpiolib-devprop.o/
+gpiolib-of.o/
+gpiolib-sysfs.o/
+gpio-davinci.o/
+gpio-pca953x.o/
+
+/0              0           0     0     644     9980      `
+/10             0           0     0     644     64104     `
+/21             0           0     0     644     4140      `
+/39             0           0     0     644     1464      `
+/58             0           0     0     644     7552      `
+/72            /0           0     0     644     11880     `
+/89             0           0     0     644     8228      `
+/105            0           0     0     644     13584     `

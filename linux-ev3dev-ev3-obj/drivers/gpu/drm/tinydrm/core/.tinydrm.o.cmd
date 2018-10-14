@@ -1,0 +1,1 @@
+cmd_drivers/gpu/drm/tinydrm/core/tinydrm.o := rm -f drivers/gpu/drm/tinydrm/core/tinydrm.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD drivers/gpu/drm/tinydrm/core/tinydrm.o drivers/gpu/drm/tinydrm/core/tinydrm-core.o drivers/gpu/drm/tinydrm/core/tinydrm-pipe.o drivers/gpu/drm/tinydrm/core/tinydrm-helpers.o

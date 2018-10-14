@@ -1,0 +1,1 @@
+cmd_drivers/net/phy/libphy.o := /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ld -EL    -r -o drivers/net/phy/libphy.o drivers/net/phy/phy.o drivers/net/phy/phy-c45.o drivers/net/phy/phy-core.o drivers/net/phy/phy_device.o drivers/net/phy/mdio_bus.o drivers/net/phy/mdio_device.o drivers/net/phy/swphy.o 

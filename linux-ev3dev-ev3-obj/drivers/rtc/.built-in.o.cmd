@@ -1,0 +1,1 @@
+cmd_drivers/rtc/built-in.o :=  rm -f drivers/rtc/built-in.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD drivers/rtc/built-in.o drivers/rtc/rtc-lib.o drivers/rtc/systohc.o drivers/rtc/rtc-core.o 

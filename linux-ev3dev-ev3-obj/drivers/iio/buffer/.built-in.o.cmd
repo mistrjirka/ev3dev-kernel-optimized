@@ -1,0 +1,1 @@
+cmd_drivers/iio/buffer/built-in.o :=  rm -f drivers/iio/buffer/built-in.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD drivers/iio/buffer/built-in.o drivers/iio/buffer/industrialio-buffer-cb.o drivers/iio/buffer/industrialio-triggered-buffer.o drivers/iio/buffer/kfifo_buf.o 

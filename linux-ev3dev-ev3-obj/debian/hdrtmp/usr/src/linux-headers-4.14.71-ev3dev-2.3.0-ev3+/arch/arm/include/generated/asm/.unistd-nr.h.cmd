@@ -1,0 +1,1 @@
+cmd_arch/arm/include/generated/asm/unistd-nr.h := /bin/bash '/home/jirka/programming/python/kernel4python3/ev3-kernel/arch/arm/tools/syscallnr.sh' '/home/jirka/programming/python/kernel4python3/ev3-kernel/arch/arm/tools/syscall.tbl' 'arch/arm/include/generated/asm/unistd-nr.h' ''

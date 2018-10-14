@@ -1,0 +1,1 @@
+cmd_fs/notify/fanotify/built-in.o :=  rm -f fs/notify/fanotify/built-in.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD fs/notify/fanotify/built-in.o fs/notify/fanotify/fanotify.o fs/notify/fanotify/fanotify_user.o 

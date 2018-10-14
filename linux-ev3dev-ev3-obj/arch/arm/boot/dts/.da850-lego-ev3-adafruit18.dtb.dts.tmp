@@ -1,0 +1,1548 @@
+# 1 "/home/jirka/programming/python/kernel4python3/ev3-kernel/arch/arm/boot/dts/da850-lego-ev3-adafruit18.dts"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "/home/jirka/programming/python/kernel4python3/ev3-kernel/arch/arm/boot/dts/da850-lego-ev3-adafruit18.dts"
+# 11 "/home/jirka/programming/python/kernel4python3/ev3-kernel/arch/arm/boot/dts/da850-lego-ev3-adafruit18.dts"
+# 1 "/home/jirka/programming/python/kernel4python3/ev3-kernel/arch/arm/boot/dts/da850-lego-ev3.dts" 1
+# 11 "/home/jirka/programming/python/kernel4python3/ev3-kernel/arch/arm/boot/dts/da850-lego-ev3.dts"
+/dts-v1/;
+# 1 "/home/jirka/programming/python/kernel4python3/ev3-kernel/scripts/dtc/include-prefixes/dt-bindings/gpio/gpio.h" 1
+# 13 "/home/jirka/programming/python/kernel4python3/ev3-kernel/arch/arm/boot/dts/da850-lego-ev3.dts" 2
+# 1 "/home/jirka/programming/python/kernel4python3/ev3-kernel/scripts/dtc/include-prefixes/dt-bindings/input/linux-event-codes.h" 1
+# 14 "/home/jirka/programming/python/kernel4python3/ev3-kernel/arch/arm/boot/dts/da850-lego-ev3.dts" 2
+# 1 "/home/jirka/programming/python/kernel4python3/ev3-kernel/scripts/dtc/include-prefixes/dt-bindings/pwm/pwm.h" 1
+# 15 "/home/jirka/programming/python/kernel4python3/ev3-kernel/arch/arm/boot/dts/da850-lego-ev3.dts" 2
+
+# 1 "/home/jirka/programming/python/kernel4python3/ev3-kernel/arch/arm/boot/dts/da850.dtsi" 1
+# 10 "/home/jirka/programming/python/kernel4python3/ev3-kernel/arch/arm/boot/dts/da850.dtsi"
+# 1 "/home/jirka/programming/python/kernel4python3/ev3-kernel/arch/arm/boot/dts/skeleton.dtsi" 1
+# 12 "/home/jirka/programming/python/kernel4python3/ev3-kernel/arch/arm/boot/dts/skeleton.dtsi"
+/ {
+ #address-cells = <1>;
+ #size-cells = <1>;
+ chosen { };
+ aliases { };
+ memory { device_type = "memory"; reg = <0 0>; };
+};
+# 11 "/home/jirka/programming/python/kernel4python3/ev3-kernel/arch/arm/boot/dts/da850.dtsi" 2
+# 1 "/home/jirka/programming/python/kernel4python3/ev3-kernel/scripts/dtc/include-prefixes/dt-bindings/interrupt-controller/irq.h" 1
+# 12 "/home/jirka/programming/python/kernel4python3/ev3-kernel/arch/arm/boot/dts/da850.dtsi" 2
+
+/ {
+ arm {
+  #address-cells = <1>;
+  #size-cells = <1>;
+  ranges;
+  intc: interrupt-controller@fffee000 {
+   compatible = "ti,cp-intc";
+   interrupt-controller;
+   #interrupt-cells = <1>;
+   ti,intc-size = <101>;
+   reg = <0xfffee000 0x2000>;
+  };
+ };
+ soc@1c00000 {
+  compatible = "simple-bus";
+  model = "da850";
+  #address-cells = <1>;
+  #size-cells = <1>;
+  ranges = <0x0 0x01c00000 0x400000>;
+  interrupt-parent = <&intc>;
+
+  pmx_core: pinmux@14120 {
+   compatible = "pinctrl-single";
+   reg = <0x14120 0x50>;
+   #pinctrl-cells = <2>;
+   pinctrl-single,bit-per-mux;
+   pinctrl-single,register-width = <32>;
+   pinctrl-single,function-mask = <0xf>;
+   status = "disabled";
+
+   serial0_rtscts_pins: pinmux_serial0_rtscts_pins {
+    pinctrl-single,bits = <
+
+     0x0c 0x22000000 0xff000000
+    >;
+   };
+   serial0_rxtx_pins: pinmux_serial0_rxtx_pins {
+    pinctrl-single,bits = <
+
+     0x0c 0x00220000 0x00ff0000
+    >;
+   };
+   serial1_rtscts_pins: pinmux_serial1_rtscts_pins {
+    pinctrl-single,bits = <
+
+     0x00 0x00440000 0x00ff0000
+    >;
+   };
+   serial1_rxtx_pins: pinmux_serial1_rxtx_pins {
+    pinctrl-single,bits = <
+
+     0x10 0x22000000 0xff000000
+    >;
+   };
+   serial2_rtscts_pins: pinmux_serial2_rtscts_pins {
+    pinctrl-single,bits = <
+
+     0x00 0x44000000 0xff000000
+    >;
+   };
+   serial2_rxtx_pins: pinmux_serial2_rxtx_pins {
+    pinctrl-single,bits = <
+
+     0x10 0x00220000 0x00ff0000
+    >;
+   };
+   i2c0_pins: pinmux_i2c0_pins {
+    pinctrl-single,bits = <
+
+     0x10 0x00002200 0x0000ff00
+    >;
+   };
+   i2c1_pins: pinmux_i2c1_pins {
+    pinctrl-single,bits = <
+
+     0x10 0x00440000 0x00ff0000
+    >;
+   };
+   mmc0_pins: pinmux_mmc_pins {
+    pinctrl-single,bits = <
+
+
+
+
+     0x28 0x00222222 0x00ffffff
+    >;
+   };
+   ehrpwm0a_pins: pinmux_ehrpwm0a_pins {
+    pinctrl-single,bits = <
+
+     0xc 0x00000002 0x0000000f
+    >;
+   };
+   ehrpwm0b_pins: pinmux_ehrpwm0b_pins {
+    pinctrl-single,bits = <
+
+     0xc 0x00000020 0x000000f0
+    >;
+   };
+   ehrpwm1a_pins: pinmux_ehrpwm1a_pins {
+    pinctrl-single,bits = <
+
+     0x14 0x00000002 0x0000000f
+    >;
+   };
+   ehrpwm1b_pins: pinmux_ehrpwm1b_pins {
+    pinctrl-single,bits = <
+
+     0x14 0x00000020 0x000000f0
+    >;
+   };
+   ecap0_pins: pinmux_ecap0_pins {
+    pinctrl-single,bits = <
+
+     0x8 0x20000000 0xf0000000
+    >;
+   };
+   ecap1_pins: pinmux_ecap1_pins {
+    pinctrl-single,bits = <
+
+     0x4 0x40000000 0xf0000000
+    >;
+   };
+   ecap2_pins: pinmux_ecap2_pins {
+    pinctrl-single,bits = <
+
+     0x4 0x00000004 0x0000000f
+    >;
+   };
+   spi0_pins: pinmux_spi0_pins {
+    pinctrl-single,bits = <
+
+     0xc 0x00001101 0x0000ff0f
+    >;
+   };
+   spi0_cs0_pin: pinmux_spi0_cs0 {
+    pinctrl-single,bits = <
+
+     0x10 0x00000010 0x000000f0
+    >;
+   };
+   spi0_cs3_pin: pinmux_spi0_cs3_pin {
+    pinctrl-single,bits = <
+
+     0xc 0x01000000 0x0f000000
+    >;
+   };
+   spi1_pins: pinmux_spi1_pins {
+    pinctrl-single,bits = <
+
+     0x14 0x00110100 0x00ff0f00
+    >;
+   };
+   spi1_cs0_pin: pinmux_spi1_cs0 {
+    pinctrl-single,bits = <
+
+     0x14 0x00000010 0x000000f0
+    >;
+   };
+   mdio_pins: pinmux_mdio_pins {
+    pinctrl-single,bits = <
+
+     0x10 0x00000088 0x000000ff
+    >;
+   };
+   mii_pins: pinmux_mii_pins {
+    pinctrl-single,bits = <
+
+
+
+
+
+     0x8 0x88888880 0xfffffff0
+
+
+
+
+
+     0xc 0x88888888 0xffffffff
+    >;
+   };
+   lcd_pins: pinmux_lcd_pins {
+    pinctrl-single,bits = <
+
+
+
+
+     0x40 0x22222200 0xffffff00
+
+
+
+
+     0x44 0x22222222 0xffffffff
+
+     0x48 0x00000022 0x000000ff
+
+
+     0x48 0x02000000 0x0f000000
+
+     0x4c 0x02000022 0x0f0000ff
+    >;
+   };
+   vpif_capture_pins: vpif_capture_pins {
+    pinctrl-single,bits = <
+
+     0x38 0x11111111 0xffffffff
+
+     0x3c 0x11111111 0xffffffff
+
+     0x40 0x00000011 0x000000ff
+    >;
+   };
+   vpif_display_pins: vpif_display_pins {
+    pinctrl-single,bits = <
+
+     0x40 0x11111100 0xffffff00
+
+     0x44 0x11111111 0xffffffff
+
+     0x48 0x00000011 0x000000ff
+
+
+
+
+     0x4c 0x00111100 0x00ffff00
+    >;
+   };
+  };
+  prictrl: priority-controller@14110 {
+   compatible = "ti,da850-mstpri";
+   reg = <0x14110 0x0c>;
+   status = "disabled";
+  };
+  cfgchip: chip-controller@1417c {
+   compatible = "ti,da830-cfgchip", "syscon", "simple-mfd";
+   reg = <0x1417c 0x14>;
+
+   usb_phy: usb-phy {
+    compatible = "ti,da830-usb-phy";
+    #phy-cells = <1>;
+    status = "disabled";
+   };
+  };
+  edma0: edma@0 {
+   compatible = "ti,edma3-tpcc";
+
+   reg = <0x0 0x8000>;
+   reg-names = "edma3_cc";
+   interrupts = <11 12>;
+   interrupt-names = "edma3_ccint", "edma3_ccerrint";
+   #dma-cells = <2>;
+
+   ti,tptcs = <&edma0_tptc0 7>, <&edma0_tptc1 0>;
+  };
+  edma0_tptc0: tptc@8000 {
+   compatible = "ti,edma3-tptc";
+   reg = <0x8000 0x400>;
+   interrupts = <13>;
+   interrupt-names = "edm3_tcerrint";
+  };
+  edma0_tptc1: tptc@8400 {
+   compatible = "ti,edma3-tptc";
+   reg = <0x8400 0x400>;
+   interrupts = <32>;
+   interrupt-names = "edm3_tcerrint";
+  };
+  edma1: edma@230000 {
+   compatible = "ti,edma3-tpcc";
+
+   reg = <0x230000 0x8000>;
+   reg-names = "edma3_cc";
+   interrupts = <93 94>;
+   interrupt-names = "edma3_ccint", "edma3_ccerrint";
+   #dma-cells = <2>;
+
+   ti,tptcs = <&edma1_tptc0 7>;
+  };
+  edma1_tptc0: tptc@238000 {
+   compatible = "ti,edma3-tptc";
+   reg = <0x238000 0x400>;
+   interrupts = <95>;
+   interrupt-names = "edm3_tcerrint";
+  };
+  serial0: serial@42000 {
+   compatible = "ti,da830-uart", "ns16550a";
+   reg = <0x42000 0x100>;
+   reg-io-width = <4>;
+   reg-shift = <2>;
+   interrupts = <25>;
+   status = "disabled";
+  };
+  serial1: serial@10c000 {
+   compatible = "ti,da830-uart", "ns16550a";
+   reg = <0x10c000 0x100>;
+   reg-io-width = <4>;
+   reg-shift = <2>;
+   interrupts = <53>;
+   status = "disabled";
+  };
+  serial2: serial@10d000 {
+   compatible = "ti,da830-uart", "ns16550a";
+   reg = <0x10d000 0x100>;
+   reg-io-width = <4>;
+   reg-shift = <2>;
+   interrupts = <61>;
+   status = "disabled";
+  };
+  rtc0: rtc@23000 {
+   compatible = "ti,da830-rtc";
+   reg = <0x23000 0x1000>;
+   interrupts = <19
+          19>;
+   status = "disabled";
+  };
+  i2c0: i2c@22000 {
+   compatible = "ti,davinci-i2c";
+   reg = <0x22000 0x1000>;
+   interrupts = <15>;
+   #address-cells = <1>;
+   #size-cells = <0>;
+   status = "disabled";
+  };
+  i2c1: i2c@228000 {
+   compatible = "ti,davinci-i2c";
+   reg = <0x228000 0x1000>;
+   interrupts = <51>;
+   #address-cells = <1>;
+   #size-cells = <0>;
+   status = "disabled";
+  };
+  wdt: wdt@21000 {
+   compatible = "ti,davinci-wdt";
+   reg = <0x21000 0x1000>;
+   status = "disabled";
+  };
+  mmc0: mmc@40000 {
+   compatible = "ti,da830-mmc";
+   reg = <0x40000 0x1000>;
+   cap-sd-highspeed;
+   cap-mmc-highspeed;
+   interrupts = <16>;
+   dmas = <&edma0 16 0>, <&edma0 17 0>;
+   dma-names = "rx", "tx";
+   status = "disabled";
+  };
+  vpif: video@217000 {
+   compatible = "ti,da850-vpif";
+   reg = <0x217000 0x1000>;
+   interrupts = <92>;
+   status = "disabled";
+
+
+   port@0 {
+    #address-cells = <1>;
+    #size-cells = <0>;
+   };
+
+
+   port@1 {
+    #address-cells = <1>;
+    #size-cells = <0>;
+   };
+  };
+  mmc1: mmc@21b000 {
+   compatible = "ti,da830-mmc";
+   reg = <0x21b000 0x1000>;
+   cap-sd-highspeed;
+   cap-mmc-highspeed;
+   interrupts = <72>;
+   dmas = <&edma1 28 0>, <&edma1 29 0>;
+   dma-names = "rx", "tx";
+   status = "disabled";
+  };
+  ehrpwm0: pwm@300000 {
+   compatible = "ti,da850-ehrpwm", "ti,am3352-ehrpwm",
+         "ti,am33xx-ehrpwm";
+   #pwm-cells = <3>;
+   reg = <0x300000 0x2000>;
+   status = "disabled";
+  };
+  ehrpwm1: pwm@302000 {
+   compatible = "ti,da850-ehrpwm", "ti,am3352-ehrpwm",
+         "ti,am33xx-ehrpwm";
+   #pwm-cells = <3>;
+   reg = <0x302000 0x2000>;
+   status = "disabled";
+  };
+  ecap0: ecap@306000 {
+   compatible = "ti,da850-ecap", "ti,am3352-ecap",
+         "ti,am33xx-ecap";
+   #pwm-cells = <3>;
+   reg = <0x306000 0x80>;
+   status = "disabled";
+  };
+  ecap1: ecap@307000 {
+   compatible = "ti,da850-ecap", "ti,am3352-ecap",
+         "ti,am33xx-ecap";
+   #pwm-cells = <3>;
+   reg = <0x307000 0x80>;
+   status = "disabled";
+  };
+  ecap2: ecap@308000 {
+   compatible = "ti,da850-ecap", "ti,am3352-ecap",
+         "ti,am33xx-ecap";
+   #pwm-cells = <3>;
+   reg = <0x308000 0x80>;
+   status = "disabled";
+  };
+  spi0: spi@41000 {
+   #address-cells = <1>;
+   #size-cells = <0>;
+   compatible = "ti,da830-spi";
+   reg = <0x41000 0x1000>;
+   num-cs = <6>;
+   ti,davinci-spi-intr-line = <1>;
+   interrupts = <20>;
+   dmas = <&edma0 14 0>, <&edma0 15 0>;
+   dma-names = "rx", "tx";
+   status = "disabled";
+  };
+  spi1: spi@30e000 {
+   #address-cells = <1>;
+   #size-cells = <0>;
+   compatible = "ti,da830-spi";
+   reg = <0x30e000 0x1000>;
+   num-cs = <4>;
+   ti,davinci-spi-intr-line = <1>;
+   interrupts = <56>;
+   dmas = <&edma0 18 0>, <&edma0 19 0>;
+   dma-names = "rx", "tx";
+   status = "disabled";
+  };
+  usb0: usb@200000 {
+   compatible = "ti,da830-musb";
+   reg = <0x200000 0x1000>;
+   ranges;
+   interrupts = <58>;
+   interrupt-names = "mc";
+   dr_mode = "otg";
+   phys = <&usb_phy 0>;
+   phy-names = "usb-phy";
+   status = "disabled";
+
+   #address-cells = <1>;
+   #size-cells = <1>;
+
+   dmas = <&cppi41dma 0 0 &cppi41dma 1 0
+    &cppi41dma 2 0 &cppi41dma 3 0
+    &cppi41dma 0 1 &cppi41dma 1 1
+    &cppi41dma 2 1 &cppi41dma 3 1>;
+   dma-names =
+    "rx1", "rx2", "rx3", "rx4",
+    "tx1", "tx2", "tx3", "tx4";
+
+   cppi41dma: dma-controller@201000 {
+    compatible = "ti,da830-cppi41";
+    reg = <0x201000 0x1000
+     0x202000 0x1000
+     0x204000 0x4000>;
+    reg-names = "controller",
+         "scheduler", "queuemgr";
+    interrupts = <58>;
+    #dma-cells = <2>;
+    #dma-channels = <4>;
+    status = "okay";
+   };
+  };
+  sata: sata@218000 {
+   compatible = "ti,da850-ahci";
+   reg = <0x218000 0x2000>, <0x22c018 0x4>;
+   interrupts = <67>;
+   status = "disabled";
+  };
+  mdio: mdio@224000 {
+   compatible = "ti,davinci_mdio";
+   #address-cells = <1>;
+   #size-cells = <0>;
+   reg = <0x224000 0x1000>;
+   status = "disabled";
+  };
+  eth0: ethernet@220000 {
+   compatible = "ti,davinci-dm6467-emac";
+   reg = <0x220000 0x4000>;
+   ti,davinci-ctrl-reg-offset = <0x3000>;
+   ti,davinci-ctrl-mod-reg-offset = <0x2000>;
+   ti,davinci-ctrl-ram-offset = <0>;
+   ti,davinci-ctrl-ram-size = <0x2000>;
+   local-mac-address = [ 00 00 00 00 00 00 ];
+   interrupts = <33
+     34
+     35
+     36
+     >;
+   status = "disabled";
+  };
+  usb1: usb@225000 {
+   compatible = "ti,da830-ohci";
+   reg = <0x225000 0x1000>;
+   interrupts = <59>;
+   phys = <&usb_phy 1>;
+   phy-names = "usb-phy";
+   status = "disabled";
+  };
+  gpio: gpio@226000 {
+   compatible = "ti,dm6441-gpio";
+   gpio-controller;
+   #gpio-cells = <2>;
+   reg = <0x226000 0x1000>;
+   interrupts = <42 43 44 45 46 47 48 49 50>;
+   ti,ngpio = <144>;
+   ti,davinci-gpio-unbanked = <0>;
+   status = "disabled";
+   interrupt-controller;
+   #interrupt-cells = <2>;
+  };
+  pinconf: pin-controller@22c00c {
+   compatible = "ti,da850-pupd";
+   reg = <0x22c00c 0x8>;
+   status = "disabled";
+  };
+
+  mcasp0: mcasp@100000 {
+   compatible = "ti,da830-mcasp-audio";
+   reg = <0x100000 0x2000>,
+         <0x102000 0x400000>;
+   reg-names = "mpu", "dat";
+   interrupts = <54>;
+   interrupt-names = "common";
+   status = "disabled";
+   dmas = <&edma0 1 1>,
+    <&edma0 0 1>;
+   dma-names = "tx", "rx";
+  };
+
+  lcdc: display@213000 {
+   compatible = "ti,da850-tilcdc";
+   reg = <0x213000 0x1000>;
+   interrupts = <52>;
+   max-pixelclock = <37500>;
+   status = "disabled";
+  };
+ };
+ aemif: aemif@68000000 {
+  compatible = "ti,da850-aemif";
+  #address-cells = <2>;
+  #size-cells = <1>;
+
+  reg = <0x68000000 0x00008000>;
+  ranges = <0 0 0x60000000 0x08000000
+     1 0 0x68000000 0x00008000>;
+  status = "disabled";
+ };
+ memctrl: memory-controller@b0000000 {
+  compatible = "ti,da850-ddr-controller";
+  reg = <0xb0000000 0xe8>;
+  status = "disabled";
+ };
+};
+# 17 "/home/jirka/programming/python/kernel4python3/ev3-kernel/arch/arm/boot/dts/da850-lego-ev3.dts" 2
+
+/ {
+ compatible = "lego,ev3", "ti,da850";
+ model = "LEGO MINDSTORMS EV3";
+
+ aliases {
+  serial0 = &serial0;
+  serial1 = &serial1;
+  serial2 = &serial2;
+ };
+
+ memory@c0000000 {
+  device_type = "memory";
+  reg = <0xc0000000 0x04000000>;
+ };
+
+ reserved-memory {
+  #address-cells = <1>;
+  #size-cells = <1>;
+  ranges;
+
+  pru_suart_reserved: serial@80000000 {
+   compatible = "shared-dma-pool";
+   reg = <0x80000000 0x2000>;
+   no-map;
+  };
+
+ };
+
+ soc@1c00000 {
+  pru_rproc: remote-processor@30000 {
+   compatible = "ev3dev,da850-pruss";
+   ranges = <0x0 0x30000 0x10000>;
+   #address-cells = <1>;
+   #size-cells = <1>;
+   pinctrl-names = "default";
+   pinctrl-0 = <&led_pins>;
+
+   pru_intc: intc {
+    compatible = "ev3dev,da850-pru-intc";
+    reg = <0x4000 0x3000>;
+    interrupts = <3>, <4>, <5>, <6>, <7>, <8>, <9>,
+          <10>;
+    interrupt-controller;
+    #interrupt-cells = <3>;
+   };
+
+   pru0: pru0 {
+    status = "disabled";
+    compatible = "ev3dev,da850-pru-rproc";
+    reg = <0x0 0x200>, <0x7000 0x400>,
+          <0x8000 0x1000>;
+    reg-names = "dram", "ctrl", "iram";
+    interrupt-parent = <&pru_intc>;
+    interrupts = <63 0xffffffff 0>,
+          <62 0xffffffff 2>;
+    interrupt-names = "vq-to-pru", "vq-from-pru";
+   };
+
+   pru1: pru1 {
+    compatible = "ev3dev,da850-pru-rproc";
+    reg = <0x2000 0x200>, <0x7800 0x400>,
+          <0xc000 0x1000>;
+    reg-names = "dram", "ctrl", "iram";
+    interrupt-parent = <&pru_intc>;
+    interrupts = <61 0xffffffff 1>,
+          <60 0xffffffff 4>;
+    interrupt-names = "vq-to-pru", "vq-from-pru";
+    firmware = "ev3-pru1.fw";
+
+    vdevs {
+     #address-cells = <1>;
+     #size-cells = <0>;
+
+     rpmsg@0 {
+      compatible = "virtio,rpmsg";
+      reg = <0>;
+      #address-cells = <1>;
+      #size-cells = <0>;
+
+      tacho: ev3-tacho-rpmsg@0 {
+       compatible = "ev3dev,ev3-pru-tacho";
+       reg = <0>;
+       #io-channel-cells = <1>;
+
+
+       pwm-gpios = <&gpio 103 0>,
+            <&gpio 108 0>,
+            <&gpio 109 0>,
+            <&gpio 110 0>;
+      };
+
+      i2c@3 {
+       compatible = "ev3dev,ev3-pru-i2c";
+       reg = <3>;
+      };
+
+      i2c@4 {
+       compatible = "ev3dev,ev3-pru-i2c";
+       reg = <4>;
+      };
+
+      i2c@5 {
+       compatible = "ev3dev,ev3-pru-i2c";
+       reg = <5>;
+      };
+
+      i2c@6 {
+       compatible = "ev3dev,ev3-pru-i2c";
+       reg = <6>;
+      };
+     };
+    };
+   };
+  };
+
+  pru_suart: serial@30000 {
+   compatible = "ev3dev,omapl-pru-suart";
+   reg = <0x30000 0x200>, <0x37000 0x400>, <0x38000 0x1000>,
+
+         <0x100000 0x3000>;
+   reg-names = "pru0-dram", "pru0-ctrl", "pru0-iram",
+
+        "mcasp";
+   interrupt-parent = <&pru_intc>;
+   interrupts = <31 0xffffffff 0>,
+          <32 0xffffffff 0>,
+
+          <34 0xffffffff 2>,
+          <35 0xffffffff 2>,
+          <36 0xffffffff 3>,
+          <37 0xffffffff 3>;
+# 162 "/home/jirka/programming/python/kernel4python3/ev3-kernel/arch/arm/boot/dts/da850-lego-ev3.dts"
+   interrupt-names = "mcasp",
+       "arm-to-pru0",
+
+       "suart0-tx",
+       "suart0-rx",
+       "suart1-tx",
+       "suart1-rx";
+# 182 "/home/jirka/programming/python/kernel4python3/ev3-kernel/arch/arm/boot/dts/da850-lego-ev3.dts"
+   memory-region = <&pru_suart_reserved>;
+  };
+ };
+
+ board {
+  pinctrl-0 = <&hw_id_pins>, <&hw_id_pinconf>;
+  pinctrl-names = "default";
+  compatible = "lego,ev3-board";
+  hw-id-gpios = <&gpio 53 0>,
+         <&gpio 52 0>,
+         <&gpio 50 0>,
+         <&gpio 74 0>;
+
+  nvmem-cells = <&hw_id>;
+  nvmem-cell-names = "hw-id";
+ };
+
+
+
+
+ gpio_keys {
+  compatible = "gpio-keys";
+  #address-cells = <1>;
+  #size-cells = <0>;
+  label = "EV3 Brick Buttons";
+  pinctrl-names = "default";
+  pinctrl-0 = <&button_pins>, <&button_bias>;
+
+  center {
+   label = "Center";
+   linux,code = <28>;
+   gpios = <&gpio 29 0>;
+  };
+
+  left {
+   label = "Left";
+   linux,code = <105>;
+   gpios = <&gpio 102 0>;
+  };
+
+  back {
+   label = "Back";
+   linux,code = <14>;
+   gpios = <&gpio 106 0>;
+  };
+
+  right {
+   label = "Right";
+   linux,code = <106>;
+   gpios = <&gpio 124 0>;
+  };
+
+  down {
+   label = "Down";
+   linux,code = <108>;
+   gpios = <&gpio 126 0>;
+  };
+
+  up {
+   label = "Up";
+   linux,code = <103>;
+   gpios = <&gpio 127 0>;
+  };
+ };
+
+
+
+
+ leds {
+  status = "disabled";
+  compatible = "gpio-leds";
+  pinctrl-names = "default";
+  pinctrl-0 = <&led_pins>;
+
+  left_green {
+   label = "led0:green:brick-status";
+
+   gpios = <&gpio 103 0>;
+   linux,default-trigger = "mmc0";
+  };
+
+  right_red {
+   label = "led1:red:brick-status";
+
+   gpios = <&gpio 108 0>;
+   linux,default-trigger = "mmc0";
+  };
+
+  left_red {
+   label = "led0:red:brick-status";
+
+   gpios = <&gpio 109 0>;
+   linux,default-trigger = "mmc0";
+  };
+
+  right_green {
+   label = "led1:green:brick-status";
+
+   gpios = <&gpio 110 0>;
+   linux,default-trigger = "mmc0";
+  };
+ };
+
+
+
+
+ gpio-poweroff {
+  compatible = "gpio-poweroff";
+  gpios = <&gpio 107 1>;
+  pinctrl-names = "default";
+  pinctrl-0 = <&system_power_pin>;
+ };
+
+ sound {
+  pinctrl-0 = <&sound_pins>;
+  pinctrl-names = "default";
+  compatible = "ev3dev,ev3-sound";
+  label = "LEGO MINDSTORMS EV3 Speaker";
+  enable-gpios = <&gpio 111 0>;
+  pwms = <&ehrpwm0 1 1 (1 << 0)>;
+  pwm-names = "speaker";
+ };
+
+
+
+
+
+ vcc5v: regulator1 {
+  pinctrl-names = "default";
+  pinctrl-0 = <&vcc5v_pins>;
+  compatible = "regulator-fixed";
+  regulator-name = "vcc5v";
+  regulator-min-microvolt = <5000000>;
+  regulator-max-microvolt = <5000000>;
+  gpio = <&gpio 101 0>;
+  over-current-gpios = <&gpio 99 1>;
+  enable-active-high;
+  regulator-boot-on;
+ };
+
+
+
+
+
+ adc_ref: regulator2 {
+  compatible = "regulator-fixed";
+  regulator-name = "adc ref";
+  regulator-min-microvolt = <2500000>;
+  regulator-max-microvolt = <2500000>;
+  regulator-boot-on;
+  vin-supply = <&vcc5v>;
+ };
+
+
+
+
+ battery {
+  pinctrl-names = "default";
+  pinctrl-0 = <&battery_pins>;
+  compatible = "lego,ev3-battery";
+  io-channels = <&adc 4>, <&adc 3>;
+  io-channel-names = "voltage", "current";
+  rechargeable-gpios = <&gpio 136 1>;
+ };
+
+ ev3_ports: ev3-ports {
+  compatible = "ev3dev,ev3-ports";
+
+  in1 {
+   pinctrl-names = "default", "i2c", "uart";
+   pinctrl-0 = <&in1_pins>, <&in1_i2c_pins>;
+   pinctrl-1 = <&in1_pins>, <&in1_i2c_pins>;
+   pinctrl-2 = <&in1_pins>, <&in1_uart_pins>;
+
+   compatible = "ev3dev,ev3-input-port";
+   io-channels = <&adc 6>, <&adc 5>;
+   io-channel-names = "pin1", "pin6";
+   pin1-gpios = <&gpio 138 0>;
+   pin2-gpios = <&gpio 34 0>;
+   pin5-gpios = <&gpio 2 0>;
+   pin6-gpios = <&gpio 15 0>;
+   buf-ena-gpios = <&gpio 139 1>;
+   ev3dev,tty-name = "ttyS1";
+   ev3dev,i2c-adapter = <3>;
+  };
+
+  in2 {
+   pinctrl-names = "default", "i2c", "uart";
+   pinctrl-0 = <&in2_pins>, <&in2_i2c_pins>;
+   pinctrl-1 = <&in2_pins>, <&in2_i2c_pins>;
+   pinctrl-2 = <&in2_pins>, <&in2_uart_pins>;
+
+   compatible = "ev3dev,ev3-input-port";
+   io-channels = <&adc 8>, <&adc 7>;
+   io-channel-names = "pin1", "pin6";
+   pin1-gpios = <&gpio 140 0>;
+   pin2-gpios = <&gpio 143 0>;
+   pin5-gpios = <&gpio 14 0>;
+   pin6-gpios = <&gpio 13 0>;
+   buf-ena-gpios = <&gpio 142 1>;
+   ev3dev,tty-name = "ttyS0";
+   ev3dev,i2c-adapter = <4>;
+  };
+
+  in3 {
+   pinctrl-names = "default", "i2c", "uart";
+   pinctrl-0 = <&in3_pins>, <&in3_i2c_pins>;
+   pinctrl-1 = <&in3_pins>, <&in3_i2c_pins>;
+   pinctrl-2 = <&in3_pins>, <&in3_uart_pins>;
+
+   compatible = "ev3dev,ev3-input-port";
+   io-channels = <&adc 10>, <&adc 9>;
+   io-channel-names = "pin1", "pin6";
+   pin1-gpios = <&gpio 137 0>;
+   pin2-gpios = <&gpio 123 0>;
+   pin5-gpios = <&gpio 12 0>;
+   pin6-gpios = <&gpio 30 0>;
+   buf-ena-gpios = <&gpio 121 1>;
+   ev3dev,tty-name = "ttySU1";
+   ev3dev,i2c-adapter = <5>;
+  };
+
+  in4 {
+   pinctrl-names = "default", "i2c", "uart";
+   pinctrl-0 = <&in4_pins>, <&in4_i2c_pins>;
+   pinctrl-1 = <&in4_pins>, <&in4_i2c_pins>;
+   pinctrl-2 = <&in4_pins>, <&in4_uart_pins>;
+
+   compatible = "ev3dev,ev3-input-port";
+   io-channels = <&adc 12>, <&adc 11>;
+   io-channel-names = "pin1", "pin6";
+   pin1-gpios = <&gpio 100 0>;
+   pin2-gpios = <&gpio 120 0>;
+   pin5-gpios = <&gpio 1 0>;
+   pin6-gpios = <&gpio 31 0>;
+   buf-ena-gpios = <&gpio 122 1>;
+   ev3dev,tty-name = "ttySU0";
+   ev3dev,i2c-adapter = <6>;
+  };
+
+  outA {
+   pinctrl-names = "default";
+   pinctrl-0 = <&outA_pins>;
+
+   compatible = "ev3dev,ev3-output-port";
+   io-channels = <&adc 1>;
+   io-channel-names = "pin5";
+   pin1-gpios = <&gpio 63 0>;
+   pin2-gpios = <&gpio 54 0>;
+   pin5-det-gpios = <&gpio 84 0>;
+   pin5-gpios = <&gpio 91 1>;
+   pin6-gpios = <&gpio 4 1>;
+   pwms = <&ehrpwm1 1 75758 (1 << 0)>;
+   pwm-names = "motor";
+
+   motor {
+    io-channels = <&tacho 0>, <&tacho 1>;
+    io-channel-names = "count", "rate";
+   };
+  };
+
+  outB {
+   pinctrl-names = "default";
+   pinctrl-0 = <&outB_pins>;
+
+   compatible = "ev3dev,ev3-output-port";
+   io-channels = <&adc 0>;
+   io-channel-names = "pin5";
+   pin1-gpios = <&gpio 33 0>;
+   pin2-gpios = <&gpio 3 0>;
+   pin5-det-gpios = <&gpio 37 0>;
+   pin5-gpios = <&gpio 88 1>;
+   pin6-gpios = <&gpio 41 1>;
+   pwms = <&ehrpwm1 0 75758 (1 << 0)>;
+   pwm-names = "motor";
+
+   motor {
+    io-channels = <&tacho 2>, <&tacho 3>;
+    io-channel-names = "count", "rate";
+   };
+  };
+
+  outC {
+   pinctrl-names = "default";
+   pinctrl-0 = <&outC_pins>;
+
+   compatible = "ev3dev,ev3-output-port";
+   io-channels = <&adc 13>;
+   io-channel-names = "pin5";
+   pin1-gpios = <&gpio 104 0>;
+   pin2-gpios = <&gpio 89 0>;
+   pin5-det-gpios = <&gpio 56 0>;
+   pin5-gpios = <&gpio 93 1>;
+   pin6-gpios = <&gpio 62 1>;
+   pwms = <&ecap0 0 75758 (1 << 0)>;
+   pwm-names = "motor";
+
+   motor {
+    io-channels = <&tacho 4>, <&tacho 5>;
+    io-channel-names = "count", "rate";
+   };
+  };
+
+  outD {
+   pinctrl-names = "default";
+   pinctrl-0 = <&outD_pins>;
+
+   compatible = "ev3dev,ev3-output-port";
+   io-channels = <&adc 14>;
+   io-channel-names = "pin5";
+   pin1-gpios = <&gpio 83 0>;
+   pin2-gpios = <&gpio 90 0>;
+   pin5-det-gpios = <&gpio 95 0>;
+   pin5-gpios = <&gpio 105 1>;
+   pin6-gpios = <&gpio 40 1>;
+   pwms = <&ecap1 0 75758 (1 << 0)>;
+   pwm-names = "motor";
+
+   motor {
+    io-channels = <&tacho 6>, <&tacho 7>;
+    io-channel-names = "count", "rate";
+   };
+  };
+ };
+};
+
+&pmx_core {
+ pinctrl-0 = <&fixed_pins>;
+ pinctrl-names = "default";
+ status = "okay";
+
+ in1_pins: pinmux-in1 {
+  pinctrl-single,bits = <
+
+   0x00 0x00000008 0x0000000f
+
+   0x04 0x00800000 0x00f00000
+
+   0x10 0x02000000 0x0f000000
+
+   0x18 0x00800000 0x00f00000
+
+   0x48 0x88000000 0xff000000
+  >;
+ };
+
+ in1_uart_pins: pinmux-in1-uart {
+  pinctrl-single,bits = <
+
+   0x10 0x20000000 0xf0000000
+  >;
+ };
+
+ in1_i2c_pins: pinmux-in1-i2c {
+  pinctrl-single,bits = <
+
+   0x10 0x80000000 0xf0000000
+  >;
+ };
+
+ in2_pins: pinmux-in2 {
+  pinctrl-single,bits = <
+
+   0x00 0x00000880 0x00000ff0
+
+   0x0c 0x00020000 0x000f0000
+
+   0x48 0x00808800 0x00f0ff00
+  >;
+ };
+
+ in2_uart_pins: pinmux-in2-uart {
+  pinctrl-single,bits = <
+
+   0x0c 0x00200000 0x00f00000
+  >;
+ };
+
+ in2_i2c_pins: pinmux-in2-i2c {
+  pinctrl-single,bits = <
+
+   0x0c 0x00400000 0x00f00000
+  >;
+ };
+
+ in3_pins: pinmux-in3 {
+  pinctrl-single,bits = <
+
+   0x00 0x00008000 0x0000f000
+
+   0x08 0x00100040 0x00f000f0
+
+   0x40 0x08000000 0x0f000000
+
+   0x44 0x00000008 0x0000000f
+
+   0x4c 0x00000008 0x0000000f
+  >;
+ };
+
+ in3_uart_pins: pinmux-in3-uart {
+  pinctrl-single,bits = <
+
+   0x08 0x00001000 0x0000f000
+  >;
+ };
+
+ in3_i2c_pins: pinmux-in3-i2c {
+  pinctrl-single,bits = <
+
+   0x08 0x00004000 0x0000f000
+  >;
+ };
+
+ in4_pins: pinmux-in4 {
+  pinctrl-single,bits = <
+
+   0x04 0x08000000 0x0f000000
+
+   0x08 0x01000008 0x0f00000f
+
+   0x40 0x80000000 0xf0000000
+
+   0x44 0x00000080 0x000000f0
+
+   0x4c 0x00000800 0x00000f00
+  >;
+ };
+
+ in4_uart_pins: pinmux-in4-uart {
+  pinctrl-single,bits = <
+
+   0x08 0x00010000 0x000f0000
+  >;
+ };
+
+ in4_i2c_pins: pinmux-in4-i2c {
+  pinctrl-single,bits = <
+
+   0x08 0x00040000 0x000f0000
+  >;
+ };
+
+ outA_pins: pinmux-outA {
+  pinctrl-single,bits = <
+
+   0x04 0x00008000 0x0000f000
+
+   0x14 0x00000020 0x000000f0
+
+   0x1c 0x00000008 0x0000000f
+
+   0x20 0x00000080 0x000000f0
+
+   0x2c 0x00080000 0x000f0000
+
+   0x30 0x00008000 0x0000f000
+  >;
+ };
+
+ outB_pins: pinmux-outB {
+  pinctrl-single,bits = <
+
+   0x04 0x00080000 0x000f0000
+
+   0x14 0x08000002 0x0f00000f
+
+   0x18 0x08000800 0x0f000f00
+
+   0x2c 0x80000000 0xf0000000
+  >;
+ };
+
+ outC_pins: pinmux-outC {
+  pinctrl-single,bits = <
+
+   0x08 0x20000000 0xf0000000
+
+   0x1c 0x80000080 0xf00000f0
+
+   0x2c 0x08000800 0x0f000f00
+
+   0x34 0x80000000 0xf0000000
+  >;
+ };
+
+ outD_pins: pinmux-outD {
+  pinctrl-single,bits = <
+
+   0x04 0x40000000 0xf0000000
+
+   0x14 0x80000000 0xf0000000
+
+   0x2c 0x00800008 0x00f0000f
+
+   0x30 0x00080000 0x000f0000
+
+   0x34 0x08000000 0x0f000000
+  >;
+ };
+
+ mmc0_cd_pin: pinmux_mmc0_cd {
+  pinctrl-single,bits = <
+
+   0x2C 0x00000080 0x000000f0
+  >;
+ };
+
+ button_pins: pinmux_button_pins {
+  pinctrl-single,bits = <
+
+   0x08 0x00000400 0x00000f00
+
+   0x34 0x00800000 0x00f00000
+
+   0x38 0x00000080 0x000000f0
+
+   0x40 0x00808800 0x00f0ff00
+  >;
+ };
+
+ led_pins: pinmux_led_pins {
+  pinctrl-single,bits = <
+
+   0x34 0x00008880 0x0000fff0
+
+   0x38 0x00000008 0x0000000f
+  >;
+ };
+
+ system_power_pin: pinmux_system_power {
+  pinctrl-single,bits = <
+
+   0x34 0x00080000 0x000f0000
+  >;
+ };
+
+ vcc5v_pins: pinmux_vcc5v {
+  pinctrl-single,bits = <
+
+   0x40 0x00000080 0x000000f0
+
+   0x4c 0x00008000 0x0000f000
+  >;
+ };
+
+ sound_pins: pinmux-sound {
+  pinctrl-single,bits = <
+
+   0x0c 0x00000020 0x000000f0
+
+   0x34 0x00000008 0x0000000f
+  >;
+ };
+
+ battery_pins: pinmux_battery_pins {
+  pinctrl-single,bits = <
+
+   0x04 0x00000080 0x000000f0
+
+   0x4c 0x00000080 0x000000f0
+  >;
+ };
+
+ ev3_lcd_pins: pinmux_lcd {
+  pinctrl-single,bits = <
+
+   0x14 0x00188100 0x00ffff00
+
+   0x30 0x80000000 0xf0000000
+  >;
+ };
+
+ hw_id_pins: pinmux-hw-id {
+  pinctrl-single,bits = <
+
+
+
+   0x20 0x00808800 0x00f0ff00
+
+
+
+   0x24 0x00800000 0x00f00000
+  >;
+ };
+
+ fixed_pins: pinmux-fixed {
+  pinctrl-single,bits = <
+
+
+
+   0x00 0x44110000 0xffff0000
+
+
+
+   0x04 0x00000804 0x00000f0f
+
+
+
+   0x10 0x00220000 0x00ff0000
+
+
+
+   0x18 0x80000008 0xf000000f
+
+
+
+   0x20 0x00080000 0x000f0000
+
+
+
+   0x24 0x08000080 0x0f0000f0
+
+
+
+   0x30 0x00800008 0x00f0000f
+
+
+
+   0x4c 0x00080000 0xf00f0000
+  >;
+ };
+};
+
+&pinconf {
+ pinctrl-0 = <&pinconf_bias_groups>;
+ pinctrl-names = "default";
+ status = "okay";
+
+ pinconf_bias_groups: bias-groups {
+  disable {
+   groups = "cp0", "cp1", "cp2", "cp3", "cp4",
+     "cp6", "cp7", "cp8", "cp9", "cp10", "cp11",
+     "cp12", "cp13", "cp14", "cp15", "cp16",
+     "cp18", "cp19", "cp20", "cp21", "cp22", "cp23",
+     "cp26", "cp27", "cp29", "cp30", "cp31";
+   bias-disable;
+  };
+ };
+
+
+ button_bias: button-bias-groups {
+  disable {
+   groups = "cp5", "cp24", "cp25", "cp28";
+   bias-disable;
+  };
+ };
+
+ hw_id_pinconf: hw-id {
+  disable {
+   groups = "cp17";
+   bias-disable;
+  };
+ };
+};
+
+
+&serial0 {
+ #tty-cells = <0>;
+ status = "okay";
+};
+
+
+&serial1 {
+ #tty-cells = <0>;
+ status = "okay";
+};
+
+
+&serial2 {
+ status = "okay";
+ auto-flow-control;
+};
+
+&rtc0 {
+ status = "okay";
+};
+
+&i2c0 {
+ status = "okay";
+ clock-frequency = <400000>;
+ pinctrl-names = "default";
+ pinctrl-0 = <&i2c0_pins>;
+
+
+
+
+ eeprom@50 {
+  compatible = "microchip,24c128";
+  pagesize = <64>;
+  read-only;
+  reg = <0x50>;
+
+  #address-cells = <1>;
+  #size-cells = <1>;
+
+
+  hw_id: hw-id@0x3F00 {
+   reg = <0x3F00 12>;
+  };
+ };
+};
+
+&wdt {
+ status = "okay";
+};
+
+&mmc0 {
+ status = "okay";
+ max-frequency = <50000000>;
+ bus-width = <4>;
+ cd-gpios = <&gpio 94 1>;
+ pinctrl-names = "default";
+ pinctrl-0 = <&mmc0_pins>, <&mmc0_cd_pin>;
+};
+
+&spi0 {
+ status = "okay";
+ pinctrl-names = "default";
+ pinctrl-0 = <&spi0_pins>, <&spi0_cs3_pin>;
+
+ adc: adc@3 {
+  compatible = "ti-ads7957";
+  reg = <3>;
+  #io-channel-cells = <1>;
+# 915 "/home/jirka/programming/python/kernel4python3/ev3-kernel/arch/arm/boot/dts/da850-lego-ev3.dts"
+  spi-max-frequency = <1000000>;
+  ti,spi-wdelay = <63>;
+  vref-supply = <&adc_ref>;
+  ev3dev,no-cs-hold;
+ };
+};
+
+&spi1 {
+ status = "okay";
+ pinctrl-0 = <&ev3_lcd_pins>;
+ pinctrl-names = "default";
+ cs-gpios = <&gpio 44 1>;
+
+ display@0{
+  compatible = "lego,ev3-lcd";
+  reg = <0>;
+  spi-max-frequency = <10000000>;
+  a0-gpios = <&gpio 43 0>;
+  reset-gpios = <&gpio 80 0>;
+ };
+};
+
+&ehrpwm0 {
+ status = "okay";
+};
+
+&ehrpwm1 {
+ status = "okay";
+};
+
+&ecap0 {
+ status = "okay";
+};
+
+&ecap1 {
+ status = "okay";
+};
+
+&ecap2 {
+ status = "okay";
+};
+
+&gpio {
+ status = "okay";
+
+
+ batt_volt_en {
+  gpio-hog;
+  gpios = <6 0>;
+  output-high;
+ };
+};
+
+&usb_phy {
+ status = "okay";
+};
+
+&usb0 {
+ status = "okay";
+};
+
+&usb1 {
+ status = "okay";
+ vbus-supply = <&vcc5v>;
+};
+# 12 "/home/jirka/programming/python/kernel4python3/ev3-kernel/arch/arm/boot/dts/da850-lego-ev3-adafruit18.dts" 2
+
+/ {
+ backlight: backlight {
+  compatible = "gpio-backlight";
+  gpios = <&gpio 44 0>;
+ };
+};
+
+&spi1 {
+ /delete-property/cs-gpios;
+
+ display@0 {
+  status = "disabled";
+ };
+
+ display@1{
+  compatible = "jianda,jd-t18003-t01";
+
+  reg = <1>;
+  spi-max-frequency = <32000000>;
+  dc-gpios = <&gpio 43 0>;
+  reset-gpios = <&gpio 80 0>;
+  backlight = <&backlight>;
+  rotation = <270>;
+ };
+};

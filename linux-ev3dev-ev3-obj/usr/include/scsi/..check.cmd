@@ -1,0 +1,1 @@
+cmd_usr/include/scsi/.check := for f in cxlflash_ioctl.h scsi_netlink.h scsi_netlink_fc.h scsi_bsg_fc.h ; do echo "./usr/include/scsi/$${f}"; done | xargs perl /home/jirka/programming/python/kernel4python3/ev3-kernel/scripts/headers_check.pl ./usr/include arm; touch usr/include/scsi/.check

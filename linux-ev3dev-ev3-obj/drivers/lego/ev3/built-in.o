@@ -1,0 +1,21 @@
+!<thin>
+//                                              146       `
+ev3_board.o/
+legoev3_i2c.o/
+legoev3_bluetooth.o/
+legoev3_motor.o/
+ev3_ports_core.o/
+ev3_ports_in.o/
+ev3_ports_out.o/
+ev3_pru.o/
+legoev3_sound.o/
+
+/0              0           0     0     644     4424      `
+/13             0           0     0     644     4576      `
+/28             0           0     0     644     4924      `
+/49            /0           0     0     644     8908      `
+/66             0           0     0     644     4352      `
+/84             0           0     0     644     13760     `
+/100           /0           0     0     644     11164     `
+/117            0           0     0     644     6852      `
+/128           /0           0     0     644     10984     `

@@ -1,0 +1,1 @@
+cmd_drivers/bluetooth/hci_uart.o := rm -f drivers/bluetooth/hci_uart.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD drivers/bluetooth/hci_uart.o drivers/bluetooth/hci_ldisc.o drivers/bluetooth/hci_serdev.o drivers/bluetooth/hci_h4.o drivers/bluetooth/hci_bcsp.o drivers/bluetooth/hci_ll.o

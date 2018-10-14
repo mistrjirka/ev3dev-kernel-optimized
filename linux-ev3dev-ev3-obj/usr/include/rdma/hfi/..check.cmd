@@ -1,0 +1,1 @@
+cmd_usr/include/rdma/hfi/.check := for f in hfi1_ioctl.h hfi1_user.h ; do echo "./usr/include/rdma/hfi/$${f}"; done | xargs perl /home/jirka/programming/python/kernel4python3/ev3-kernel/scripts/headers_check.pl ./usr/include arm; touch usr/include/rdma/hfi/.check

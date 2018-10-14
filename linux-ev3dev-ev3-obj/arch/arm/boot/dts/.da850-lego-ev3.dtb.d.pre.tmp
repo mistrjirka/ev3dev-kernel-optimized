@@ -1,0 +1,8 @@
+da850-lego-ev3.o: \
+ /home/jirka/programming/python/kernel4python3/ev3-kernel/arch/arm/boot/dts/da850-lego-ev3.dts \
+ /home/jirka/programming/python/kernel4python3/ev3-kernel/scripts/dtc/include-prefixes/dt-bindings/gpio/gpio.h \
+ /home/jirka/programming/python/kernel4python3/ev3-kernel/scripts/dtc/include-prefixes/dt-bindings/input/linux-event-codes.h \
+ /home/jirka/programming/python/kernel4python3/ev3-kernel/scripts/dtc/include-prefixes/dt-bindings/pwm/pwm.h \
+ /home/jirka/programming/python/kernel4python3/ev3-kernel/arch/arm/boot/dts/da850.dtsi \
+ /home/jirka/programming/python/kernel4python3/ev3-kernel/arch/arm/boot/dts/skeleton.dtsi \
+ /home/jirka/programming/python/kernel4python3/ev3-kernel/scripts/dtc/include-prefixes/dt-bindings/interrupt-controller/irq.h

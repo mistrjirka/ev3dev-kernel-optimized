@@ -1,0 +1,1 @@
+cmd_drivers/video/backlight/built-in.o :=  rm -f drivers/video/backlight/built-in.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD drivers/video/backlight/built-in.o drivers/video/backlight/backlight.o drivers/video/backlight/generic_bl.o drivers/video/backlight/gpio_backlight.o 

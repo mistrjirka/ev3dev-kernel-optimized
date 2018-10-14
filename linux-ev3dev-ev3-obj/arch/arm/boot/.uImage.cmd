@@ -1,0 +1,1 @@
+cmd_arch/arm/boot/uImage := /bin/bash /home/jirka/programming/python/kernel4python3/ev3-kernel/scripts/mkuboot.sh -A arm -O linux -C none  -T kernel -a 0xc0008000 -e 0xc0008000 -n 'Linux-4.14.71-ev3dev-2.3.0-ev3+' -d arch/arm/boot/zImage arch/arm/boot/uImage

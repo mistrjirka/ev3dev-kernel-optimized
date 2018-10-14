@@ -1,0 +1,1 @@
+cmd_drivers/lego/linux/built-in.o :=  rm -f drivers/lego/linux/built-in.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD drivers/lego/linux/built-in.o drivers/lego/linux/board_info/built-in.o drivers/lego/linux/iio/built-in.o drivers/lego/linux/omapl_pru/built-in.o drivers/lego/linux/rproc/built-in.o 

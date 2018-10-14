@@ -1,0 +1,20 @@
+!<thin>
+//                                              254       `
+board_info/board_info.o/
+iio/ti-ads79xx.o/
+omapl_pru/ti_omapl_pru_suart.o/
+omapl_pru/pru/hal/uart/src/suart_api.o/
+omapl_pru/pru/hal/uart/src/suart_utils.o/
+omapl_pru/pru/hal/common/src/pru.o/
+rproc/ti_pru_intc.o/
+rproc/ti_pru_rproc.o/
+rproc/ti_pruss.o/
+/0              0           0     0     644     6608      `
+/25             0           0     0     644     18816     `
+/43             0           0     0     644     15132     `
+/75             0           0     0     644     11292     `
+/115            0           0     0     644     2708      `
+/157            0           0     0     644     1616      `
+/193            0           0     0     644     7096      `
+/214            0           0     0     644     5292      `
+/236            0           0     0     644     2840      `

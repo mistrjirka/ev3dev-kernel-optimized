@@ -1,0 +1,1 @@
+cmd_drivers/nvmem/built-in.o :=  rm -f drivers/nvmem/built-in.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD drivers/nvmem/built-in.o drivers/nvmem/nvmem_core.o 

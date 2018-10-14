@@ -1,0 +1,1 @@
+cmd_drivers/net/wireless/ath/ath9k/ath9k_common.o := /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ld -EL    -r -o drivers/net/wireless/ath/ath9k/ath9k_common.o drivers/net/wireless/ath/ath9k/common.o drivers/net/wireless/ath/ath9k/common-init.o drivers/net/wireless/ath/ath9k/common-beacon.o 

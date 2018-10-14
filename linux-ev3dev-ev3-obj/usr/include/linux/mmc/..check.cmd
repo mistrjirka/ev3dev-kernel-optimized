@@ -1,0 +1,1 @@
+cmd_usr/include/linux/mmc/.check := for f in ioctl.h ; do echo "./usr/include/linux/mmc/$${f}"; done | xargs perl /home/jirka/programming/python/kernel4python3/ev3-kernel/scripts/headers_check.pl ./usr/include arm; touch usr/include/linux/mmc/.check

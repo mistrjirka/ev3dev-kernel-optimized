@@ -1,0 +1,1 @@
+cmd_drivers/extcon/extcon-core.o := rm -f drivers/extcon/extcon-core.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD drivers/extcon/extcon-core.o drivers/extcon/extcon.o drivers/extcon/devres.o

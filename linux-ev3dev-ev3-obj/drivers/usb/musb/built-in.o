@@ -1,0 +1,12 @@
+!<thin>
+//                                              70        `
+musb_core.o/
+musb_trace.o/
+musb_gadget_ep0.o/
+musb_gadget.o/
+da8xx.o/
+/0              0           0     0     644     33564     `
+/13             0           0     0     644     852       `
+/27             0           0     0     644     7584      `
+/46             0           0     0     644     16936     `
+/61             0           0     0     644     8696      `

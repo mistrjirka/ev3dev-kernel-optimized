@@ -1,0 +1,1 @@
+cmd_crypto/crypto_hash.o := rm -f crypto/crypto_hash.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD crypto/crypto_hash.o crypto/ahash.o crypto/shash.o

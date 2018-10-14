@@ -1,0 +1,6 @@
+da850-evm.o: \
+ /home/jirka/programming/python/kernel4python3/ev3-kernel/arch/arm/boot/dts/da850-evm.dts \
+ /home/jirka/programming/python/kernel4python3/ev3-kernel/arch/arm/boot/dts/da850.dtsi \
+ /home/jirka/programming/python/kernel4python3/ev3-kernel/arch/arm/boot/dts/skeleton.dtsi \
+ /home/jirka/programming/python/kernel4python3/ev3-kernel/scripts/dtc/include-prefixes/dt-bindings/interrupt-controller/irq.h \
+ /home/jirka/programming/python/kernel4python3/ev3-kernel/scripts/dtc/include-prefixes/dt-bindings/gpio/gpio.h

@@ -1,0 +1,7 @@
+kernel/drivers/iio/industrialio.ko
+kernel/drivers/iio/industrialio-configfs.ko
+kernel/drivers/iio/industrialio-sw-trigger.ko
+kernel/drivers/iio/buffer/industrialio-buffer-cb.ko
+kernel/drivers/iio/buffer/industrialio-triggered-buffer.ko
+kernel/drivers/iio/buffer/kfifo_buf.ko
+kernel/drivers/iio/trigger/iio-trig-hrtimer.ko

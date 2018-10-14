@@ -1,0 +1,1 @@
+cmd_net/802/p8022.ko := /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ld -EL -r  -T /home/jirka/programming/python/kernel4python3/ev3-kernel/scripts/module-common.lds --build-id  -o net/802/p8022.ko net/802/p8022.o net/802/p8022.mod.o ;  true

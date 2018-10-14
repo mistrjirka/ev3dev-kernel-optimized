@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Sun, 14 Oct 2018 12:40:40 +0200
+Source: linux-4.14.71-ev3dev-2.3.0-ev3+
+Binary: linux-image-4.14.71-ev3dev-2.3.0-ev3+ linux-headers-4.14.71-ev3dev-2.3.0-ev3+ linux-libc-dev
+Architecture: armel armhf
+Version: 1
+Distribution: bionic
+Urgency: low
+Maintainer: Anonymous <root@jirka-System-Product-Name>
+Changed-By: Anonymous <root@jirka-System-Product-Name>
+Description:
+ linux-headers-4.14.71-ev3dev-2.3.0-ev3+ - Linux kernel headers for 4.14.71-ev3dev-2.3.0-ev3+ on
+ linux-image-4.14.71-ev3dev-2.3.0-ev3+ - Linux kernel, version 4.14.71-ev3dev-2.3.0-ev3+
+ linux-libc-dev - Linux support headers for userspace development
+Changes:
+ linux-4.14.71-ev3dev-2.3.0-ev3+ (1) bionic; urgency=low
+ .
+   * Custom built Linux kernel.
+Checksums-Sha1:
+ f08e0022a03e2af71720e5b759c61b0aebc57e6e 10942784 linux-headers-4.14.71-ev3dev-2.3.0-ev3+_1_armel.deb
+ 1cb17e660ad03e4b9e50d974528f495d9a084d4b 6512832 linux-image-4.14.71-ev3dev-2.3.0-ev3+_1_armel.deb
+ 7e57bb44c3729f16f35d9102b3d1fdcc640f6b10 937992 linux-libc-dev_1_armel.deb
+Checksums-Sha256:
+ 45b1c333127a1388168a873b8da42b4664d3802fbea35dd31a0695bf506f55ef 10942784 linux-headers-4.14.71-ev3dev-2.3.0-ev3+_1_armel.deb
+ b8d77a246436115834c6ea0046cbbd26296c7635ec28a6bb8921d7792e5fe062 6512832 linux-image-4.14.71-ev3dev-2.3.0-ev3+_1_armel.deb
+ 375c8668f19163f2e490471c93ac1d6dbc047ab8e8f1f3b3aa3b50facb96267b 937992 linux-libc-dev_1_armel.deb
+Files:
+ f9cd67a2f2aff2a70a234fdc4d46bf9f 10942784 kernel optional linux-headers-4.14.71-ev3dev-2.3.0-ev3+_1_armel.deb
+ 86aed4b46cd889ef67cf1441998dbddc 6512832 kernel optional linux-image-4.14.71-ev3dev-2.3.0-ev3+_1_armel.deb
+ de4e5711653165ae45a06d07845f57cc 937992 devel optional linux-libc-dev_1_armel.deb

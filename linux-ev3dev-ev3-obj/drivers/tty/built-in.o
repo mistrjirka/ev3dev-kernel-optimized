@@ -1,0 +1,60 @@
+!<thin>
+//                                              476       `
+tty_io.o/
+n_tty.o/
+tty_ioctl.o/
+tty_ldisc.o/
+tty_buffer.o/
+tty_port.o/
+tty_mutex.o/
+tty_ldsem.o/
+tty_baudrate.o/
+tty_jobctrl.o/
+n_null.o/
+pty.o/
+vt/vt_ioctl.o/
+vt/vc_screen.o/
+vt/selection.o/
+vt/keyboard.o/
+vt/consolemap.o/
+vt/consolemap_deftbl.o/
+vt/vt.o/
+vt/defkeymap.o/
+serial/serial_core.o/
+serial/earlycon.o/
+serial/8250/8250_core.o/
+serial/8250/8250_port.o/
+serial/8250/8250_dma.o/
+serial/8250/8250_early.o/
+serial/8250/8250_fsl.o/
+serial/8250/8250_of.o/
+serdev/core.o/
+/0              0           0     0     644     43860     `
+/10             0           0     0     644     20524     `
+/19             0           0     0     644     14692     `
+/32             0           0     0     644     12036     `
+/45             0           0     0     644     10848     `
+/59             0           0     0     644     20576     `
+/71             0           0     0     644     2960      `
+/84             0           0     0     644     3784      `
+/97             0           0     0     644     4160      `
+/113            0           0     0     644     8136      `
+/128            0           0     0     644     2476      `
+/138            0           0     0     644     11460     `
+/145            0           0     0     644     14016     `
+/160            0           0     0     644     7908      `
+/176            0           0     0     644     5952      `
+/192            0           0     0     644     31072     `
+/207            0           0     0     644     11456     `
+/224            0           0     0     644     1724      `
+/248            0           0     0     644     60120     `
+/257            0           0     0     644     10440     `
+/273            0           0     0     644     41672     `
+/295            0           0     0     644     4724      `
+/314            0           0     0     644     16684     `
+/339            0           0     0     644     38216     `
+/364            0           0     0     644     7068      `
+/388            0           0     0     644     4036      `
+/414            0           0     0     644     1988      `
+/438            0           0     0     644     8708      `
+/461            0           0     0     644     17016     `

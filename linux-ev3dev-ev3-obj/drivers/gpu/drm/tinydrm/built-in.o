@@ -1,0 +1,15 @@
+!<thin>
+//                                              100       `
+core/tinydrm-core.o/
+core/tinydrm-pipe.o/
+core/tinydrm-helpers.o/
+mipi-dbi.o/
+st7586.o/
+st7735r.o/
+
+/0              0           0     0     644     8096      `
+/21             0           0     0     644     5256      `
+/42             0           0     0     644     12420     `
+/66             0           0     0     644     13504     `
+/78             0           0     0     644     9024      `
+/88             0           0     0     644     7176      `

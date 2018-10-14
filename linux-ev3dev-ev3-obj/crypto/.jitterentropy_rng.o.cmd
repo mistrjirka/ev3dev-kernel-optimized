@@ -1,0 +1,1 @@
+cmd_crypto/jitterentropy_rng.o := rm -f crypto/jitterentropy_rng.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD crypto/jitterentropy_rng.o crypto/jitterentropy.o crypto/jitterentropy-kcapi.o

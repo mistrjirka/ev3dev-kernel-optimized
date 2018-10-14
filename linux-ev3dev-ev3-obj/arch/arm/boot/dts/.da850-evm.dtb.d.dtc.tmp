@@ -1,0 +1,1 @@
+arch/arm/boot/dts/da850-evm.dtb: arch/arm/boot/dts/.da850-evm.dtb.dts.tmp /home/jirka/programming/python/kernel4python3/ev3-kernel/arch/arm/boot/dts/tps6507x.dtsi

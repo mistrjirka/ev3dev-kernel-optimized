@@ -1,0 +1,59 @@
+!<thin>
+//                                              730       `
+core/lego_bus.o/
+core/lego_port_class.o/
+ev3/ev3_board.o/
+ev3/legoev3_i2c.o/
+ev3/legoev3_bluetooth.o/
+ev3/legoev3_motor.o/
+ev3/ev3_ports_core.o/
+ev3/ev3_ports_in.o/
+ev3/ev3_ports_out.o/
+ev3/ev3_pru.o/
+ev3/legoev3_sound.o/
+motors/tacho_motor_class.o/
+motors/tacho_motor_helper.o/
+motors/dc_motor_class.o/
+motors/ev3_motor_core.o/
+motors/ev3_motor_defs.o/
+motors/rcx_motor.o/
+motors/rcx_led.o/
+sensors/lego_sensor_class.o/
+linux/board_info/board_info.o/
+linux/iio/ti-ads79xx.o/
+linux/omapl_pru/ti_omapl_pru_suart.o/
+linux/omapl_pru/pru/hal/uart/src/suart_api.o/
+linux/omapl_pru/pru/hal/uart/src/suart_utils.o/
+linux/omapl_pru/pru/hal/common/src/pru.o/
+linux/rproc/ti_pru_intc.o/
+linux/rproc/ti_pru_rproc.o/
+linux/rproc/ti_pruss.o/
+
+/0              0           0     0     644     7352      `
+/17             0           0     0     644     6816      `
+/41             0           0     0     644     4424      `
+/58             0           0     0     644     4576      `
+/77             0           0     0     644     4924      `
+/102           /0           0     0     644     8908      `
+/123            0           0     0     644     4352      `
+/145            0           0     0     644     13760     `
+/165           /0           0     0     644     11164     `
+/186            0           0     0     644     6852      `
+/201           /0           0     0     644     10984     `
+/222            0           0     0     644     19112     `
+/250            0           0     0     644     4384      `
+/279            0           0     0     644     12304     `
+/304            0           0     0     644     3648      `
+/329            0           0     0     644     1940      `
+/354            0           0     0     644     2652      `
+/374            0           0     0     644     3184      `
+/392            0           0     0     644     15216     `
+/421            0           0     0     644     6608      `
+/452            0           0     0     644     18816     `
+/476            0           0     0     644     15132     `
+/514            0           0     0     644     11292     `
+/560            0           0     0     644     2708      `
+/608            0           0     0     644     1616      `
+/650            0           0     0     644     7096      `
+/677            0           0     0     644     5292      `
+/705            0           0     0     644     2840      `

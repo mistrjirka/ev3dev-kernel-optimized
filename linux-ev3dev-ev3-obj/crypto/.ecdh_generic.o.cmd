@@ -1,0 +1,1 @@
+cmd_crypto/ecdh_generic.o := rm -f crypto/ecdh_generic.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD crypto/ecdh_generic.o crypto/ecc.o crypto/ecdh.o crypto/ecdh_helper.o

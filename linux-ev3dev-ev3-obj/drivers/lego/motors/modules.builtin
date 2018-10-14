@@ -1,0 +1,5 @@
+kernel/drivers/lego/motors/tacho_motor.ko
+kernel/drivers/lego/motors/dc_motor_class.ko
+kernel/drivers/lego/motors/ev3_motor.ko
+kernel/drivers/lego/motors/rcx_motor.ko
+kernel/drivers/lego/motors/rcx_led.ko

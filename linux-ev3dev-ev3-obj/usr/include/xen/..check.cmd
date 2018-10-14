@@ -1,0 +1,1 @@
+cmd_usr/include/xen/.check := for f in privcmd.h evtchn.h gntdev.h gntalloc.h ; do echo "./usr/include/xen/$${f}"; done | xargs perl /home/jirka/programming/python/kernel4python3/ev3-kernel/scripts/headers_check.pl ./usr/include arm; touch usr/include/xen/.check

@@ -1,0 +1,1 @@
+cmd_usr/include/linux/wimax/.check := for f in i2400m.h ; do echo "./usr/include/linux/wimax/$${f}"; done | xargs perl /home/jirka/programming/python/kernel4python3/ev3-kernel/scripts/headers_check.pl ./usr/include arm; touch usr/include/linux/wimax/.check

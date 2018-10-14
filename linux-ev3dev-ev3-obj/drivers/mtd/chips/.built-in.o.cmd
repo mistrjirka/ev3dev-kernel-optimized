@@ -1,0 +1,1 @@
+cmd_drivers/mtd/chips/built-in.o :=  rm -f drivers/mtd/chips/built-in.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD drivers/mtd/chips/built-in.o drivers/mtd/chips/chipreg.o 

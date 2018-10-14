@@ -1,0 +1,1 @@
+cmd_net/netlink/built-in.o :=  rm -f net/netlink/built-in.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD net/netlink/built-in.o net/netlink/af_netlink.o net/netlink/genetlink.o 

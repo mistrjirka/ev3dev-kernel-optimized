@@ -1,0 +1,1 @@
+cmd_fs/nls/built-in.o :=  rm -f fs/nls/built-in.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD fs/nls/built-in.o fs/nls/nls_base.o fs/nls/nls_cp437.o fs/nls/nls_iso8859-1.o fs/nls/nls_utf8.o 

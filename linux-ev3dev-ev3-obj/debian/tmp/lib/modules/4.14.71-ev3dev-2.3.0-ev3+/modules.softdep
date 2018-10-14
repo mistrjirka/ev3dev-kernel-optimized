@@ -1,0 +1,3 @@
+# Soft dependencies extracted from modules themselves.
+softdep crc_t10dif pre: crct10dif
+softdep libcrc32c pre: crc32c

@@ -1,0 +1,1 @@
+cmd_net/ipv4/netfilter/nf_defrag_ipv4.ko := /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ld -EL -r  -T /home/jirka/programming/python/kernel4python3/ev3-kernel/scripts/module-common.lds --build-id  -o net/ipv4/netfilter/nf_defrag_ipv4.ko net/ipv4/netfilter/nf_defrag_ipv4.o net/ipv4/netfilter/nf_defrag_ipv4.mod.o ;  true

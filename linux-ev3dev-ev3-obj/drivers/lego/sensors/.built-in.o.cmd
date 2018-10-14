@@ -1,0 +1,1 @@
+cmd_drivers/lego/sensors/built-in.o :=  rm -f drivers/lego/sensors/built-in.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD drivers/lego/sensors/built-in.o drivers/lego/sensors/lego_sensor_class.o 

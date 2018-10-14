@@ -1,0 +1,6 @@
+kernel/drivers/lego/lms2012/battery.ko
+kernel/drivers/lego/lms2012/d_analog.ko
+kernel/drivers/lego/lms2012/d_iic.ko
+kernel/drivers/lego/lms2012/d_pwm.ko
+kernel/drivers/lego/lms2012/d_uart.ko
+kernel/drivers/lego/lms2012/lms2012_compat.ko

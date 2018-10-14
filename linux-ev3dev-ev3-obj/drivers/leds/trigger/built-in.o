@@ -1,0 +1,11 @@
+!<thin>
+//                                              82        `
+ledtrig-timer.o/
+ledtrig-heartbeat.o/
+ledtrig-default-on.o/
+ledtrig-transient.o/
+
+/0             /0           0     0     644     3236      `
+/17             0           0     0     644     4428      `
+/38             0           0     0     644     2048      `
+/60             0           0     0     644     4516      `

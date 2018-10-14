@@ -1,0 +1,1 @@
+cmd_lib/lzo/lzo_compress.o := rm -f lib/lzo/lzo_compress.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD lib/lzo/lzo_compress.o lib/lzo/lzo1x_compress.o

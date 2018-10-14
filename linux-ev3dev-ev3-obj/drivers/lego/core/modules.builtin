@@ -1,0 +1,2 @@
+kernel/drivers/lego/core/lego_bus.ko
+kernel/drivers/lego/core/lego_port_class.ko

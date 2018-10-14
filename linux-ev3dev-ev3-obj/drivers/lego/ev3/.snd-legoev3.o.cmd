@@ -1,0 +1,1 @@
+cmd_drivers/lego/ev3/snd-legoev3.o := rm -f drivers/lego/ev3/snd-legoev3.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD drivers/lego/ev3/snd-legoev3.o drivers/lego/ev3/legoev3_sound.o

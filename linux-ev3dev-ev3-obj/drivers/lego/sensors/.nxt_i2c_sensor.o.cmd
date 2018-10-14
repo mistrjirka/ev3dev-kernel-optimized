@@ -1,0 +1,1 @@
+cmd_drivers/lego/sensors/nxt_i2c_sensor.o := /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ld -EL    -r -o drivers/lego/sensors/nxt_i2c_sensor.o drivers/lego/sensors/nxt_i2c_sensor_core.o drivers/lego/sensors/nxt_i2c_sensor_defs.o drivers/lego/sensors/ht_nxt_smux.o drivers/lego/sensors/ms_ev3_smux.o drivers/lego/sensors/ms_nxtmmx.o 

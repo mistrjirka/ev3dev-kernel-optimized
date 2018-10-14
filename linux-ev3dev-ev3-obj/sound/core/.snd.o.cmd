@@ -1,0 +1,1 @@
+cmd_sound/core/snd.o := rm -f sound/core/snd.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD sound/core/snd.o sound/core/sound.o sound/core/init.o sound/core/memory.o sound/core/control.o sound/core/misc.o sound/core/device.o sound/core/info.o

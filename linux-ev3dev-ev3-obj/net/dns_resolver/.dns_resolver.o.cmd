@@ -1,0 +1,1 @@
+cmd_net/dns_resolver/dns_resolver.o := /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ld -EL    -r -o net/dns_resolver/dns_resolver.o net/dns_resolver/dns_key.o net/dns_resolver/dns_query.o 

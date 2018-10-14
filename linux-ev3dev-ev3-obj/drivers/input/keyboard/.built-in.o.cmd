@@ -1,0 +1,1 @@
+cmd_drivers/input/keyboard/built-in.o :=  rm -f drivers/input/keyboard/built-in.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD drivers/input/keyboard/built-in.o drivers/input/keyboard/atkbd.o drivers/input/keyboard/gpio_keys.o drivers/input/keyboard/gpio_keys_polled.o 

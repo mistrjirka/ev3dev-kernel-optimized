@@ -1,0 +1,4 @@
+kernel/drivers/input/keyboard/xtkbd.ko
+kernel/drivers/input/joystick/xpad.ko
+kernel/drivers/input/misc/uinput.ko
+kernel/drivers/input/ff-memless.ko

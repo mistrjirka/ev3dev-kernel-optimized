@@ -1,0 +1,1 @@
+cmd_drivers/gpu/drm/tinydrm/built-in.o :=  rm -f drivers/gpu/drm/tinydrm/built-in.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD drivers/gpu/drm/tinydrm/built-in.o drivers/gpu/drm/tinydrm/core/built-in.o drivers/gpu/drm/tinydrm/mipi-dbi.o drivers/gpu/drm/tinydrm/st7586.o drivers/gpu/drm/tinydrm/st7735r.o 

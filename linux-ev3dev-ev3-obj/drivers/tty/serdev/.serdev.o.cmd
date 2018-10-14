@@ -1,0 +1,1 @@
+cmd_drivers/tty/serdev/serdev.o := rm -f drivers/tty/serdev/serdev.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD drivers/tty/serdev/serdev.o drivers/tty/serdev/core.o

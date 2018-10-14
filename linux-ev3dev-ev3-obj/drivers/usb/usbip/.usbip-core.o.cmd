@@ -1,0 +1,1 @@
+cmd_drivers/usb/usbip/usbip-core.o := /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ld -EL    -r -o drivers/usb/usbip/usbip-core.o drivers/usb/usbip/usbip_common.o drivers/usb/usbip/usbip_event.o 

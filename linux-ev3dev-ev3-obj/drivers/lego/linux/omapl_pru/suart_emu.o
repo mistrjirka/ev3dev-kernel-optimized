@@ -1,0 +1,10 @@
+!<thin>
+//                                              110       `
+ti_omapl_pru_suart.o/
+pru/hal/uart/src/suart_api.o/
+pru/hal/uart/src/suart_utils.o/
+pru/hal/common/src/pru.o/
+/0              0           0     0     644     15132     `
+/22             0           0     0     644     11292     `
+/52             0           0     0     644     2708      `
+/84             0           0     0     644     1616      `

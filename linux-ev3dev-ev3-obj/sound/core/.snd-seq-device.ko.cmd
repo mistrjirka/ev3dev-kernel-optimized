@@ -1,0 +1,1 @@
+cmd_sound/core/snd-seq-device.ko := /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ld -EL -r  -T /home/jirka/programming/python/kernel4python3/ev3-kernel/scripts/module-common.lds --build-id  -o sound/core/snd-seq-device.ko sound/core/snd-seq-device.o sound/core/snd-seq-device.mod.o ;  true

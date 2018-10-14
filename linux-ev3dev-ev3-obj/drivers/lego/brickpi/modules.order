@@ -1,0 +1,2 @@
+kernel/drivers/lego/brickpi/brickpi.ko
+kernel/drivers/lego/brickpi/brickpi_i2c_sensor.ko

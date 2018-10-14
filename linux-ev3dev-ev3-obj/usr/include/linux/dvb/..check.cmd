@@ -1,0 +1,1 @@
+cmd_usr/include/linux/dvb/.check := for f in net.h dmx.h audio.h version.h ca.h frontend.h video.h osd.h ; do echo "./usr/include/linux/dvb/$${f}"; done | xargs perl /home/jirka/programming/python/kernel4python3/ev3-kernel/scripts/headers_check.pl ./usr/include arm; touch usr/include/linux/dvb/.check

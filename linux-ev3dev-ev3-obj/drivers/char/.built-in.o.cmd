@@ -1,0 +1,1 @@
+cmd_drivers/char/built-in.o :=  rm -f drivers/char/built-in.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD drivers/char/built-in.o drivers/char/mem.o drivers/char/random.o drivers/char/ttyprintk.o drivers/char/misc.o drivers/char/hw_random/built-in.o drivers/char/agp/built-in.o 

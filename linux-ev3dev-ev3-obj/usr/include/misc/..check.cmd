@@ -1,0 +1,1 @@
+cmd_usr/include/misc/.check := for f in cxl.h ; do echo "./usr/include/misc/$${f}"; done | xargs perl /home/jirka/programming/python/kernel4python3/ev3-kernel/scripts/headers_check.pl ./usr/include arm; touch usr/include/misc/.check

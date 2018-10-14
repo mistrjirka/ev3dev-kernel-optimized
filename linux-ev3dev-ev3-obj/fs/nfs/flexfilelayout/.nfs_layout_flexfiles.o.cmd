@@ -1,0 +1,1 @@
+cmd_fs/nfs/flexfilelayout/nfs_layout_flexfiles.o := /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ld -EL    -r -o fs/nfs/flexfilelayout/nfs_layout_flexfiles.o fs/nfs/flexfilelayout/flexfilelayout.o fs/nfs/flexfilelayout/flexfilelayoutdev.o 

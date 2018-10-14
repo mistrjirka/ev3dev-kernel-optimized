@@ -1,0 +1,1 @@
+cmd_drivers/pwm/built-in.o :=  rm -f drivers/pwm/built-in.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD drivers/pwm/built-in.o drivers/pwm/core.o drivers/pwm/sysfs.o drivers/pwm/pwm-tiecap.o drivers/pwm/pwm-tiehrpwm.o 

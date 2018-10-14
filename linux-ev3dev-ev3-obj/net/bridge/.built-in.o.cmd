@@ -1,0 +1,1 @@
+cmd_net/bridge/built-in.o :=  rm -f net/bridge/built-in.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD net/bridge/built-in.o net/bridge/netfilter/built-in.o 

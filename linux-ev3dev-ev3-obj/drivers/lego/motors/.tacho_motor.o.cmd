@@ -1,0 +1,1 @@
+cmd_drivers/lego/motors/tacho_motor.o := rm -f drivers/lego/motors/tacho_motor.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD drivers/lego/motors/tacho_motor.o drivers/lego/motors/tacho_motor_class.o drivers/lego/motors/tacho_motor_helper.o

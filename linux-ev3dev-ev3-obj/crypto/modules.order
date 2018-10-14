@@ -1,0 +1,10 @@
+kernel/crypto/echainiv.ko
+kernel/crypto/sha1_generic.ko
+kernel/crypto/gf128mul.ko
+kernel/crypto/gcm.ko
+kernel/crypto/michael_mic.ko
+kernel/crypto/crc32_generic.ko
+kernel/crypto/crct10dif_common.ko
+kernel/crypto/crct10dif_generic.ko
+kernel/crypto/ghash-generic.ko
+kernel/crypto/xor.ko

@@ -1,0 +1,3 @@
+kernel/drivers/hwmon/hwmon.ko
+kernel/drivers/hwmon/lm75.ko
+kernel/drivers/hwmon/pcf8591.ko

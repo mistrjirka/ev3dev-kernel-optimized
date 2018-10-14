@@ -1,0 +1,1 @@
+cmd_drivers/i2c/busses/built-in.o :=  rm -f drivers/i2c/busses/built-in.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD drivers/i2c/busses/built-in.o drivers/i2c/busses/i2c-davinci.o 

@@ -1,0 +1,21 @@
+!<thin>
+//                                              180       `
+led-core.o/
+led-class.o/
+led-triggers.o/
+leds-gpio.o/
+leds-pwm.o/
+trigger/ledtrig-timer.o/
+trigger/ledtrig-heartbeat.o/
+trigger/ledtrig-default-on.o/
+trigger/ledtrig-transient.o/
+
+/0              0           0     0     644     10068     `
+/12             0           0     0     644     9500      `
+/25             0           0     0     644     13512     `
+/41             0           0     0     644     5380      `
+/54             0           0     0     644     4756      `
+/66            /0           0     0     644     3236      `
+/91             0           0     0     644     4428      `
+/120            0           0     0     644     2048      `
+/150            0           0     0     644     4516      `

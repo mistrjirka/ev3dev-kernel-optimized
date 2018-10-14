@@ -1,0 +1,6 @@
+kernel/drivers/lego/linux/board_info/board_info.ko
+kernel/drivers/lego/linux/iio/ti-ads79xx.ko
+kernel/drivers/lego/linux/omapl_pru/suart_emu.ko
+kernel/drivers/lego/linux/rproc/ti_pru_intc.ko
+kernel/drivers/lego/linux/rproc/ti_pru_rproc.ko
+kernel/drivers/lego/linux/rproc/ti_pruss.ko

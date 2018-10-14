@@ -1,0 +1,1 @@
+cmd_drivers/usb/musb/musb_hdrc.o := rm -f drivers/usb/musb/musb_hdrc.o; /usr/lib/x86_64-linux-gnu/gcc-linaro-arm-linux-gnueabihf-6.4/bin/arm-linux-gnueabihf-ar rcSTPD drivers/usb/musb/musb_hdrc.o drivers/usb/musb/musb_core.o drivers/usb/musb/musb_trace.o drivers/usb/musb/musb_gadget_ep0.o drivers/usb/musb/musb_gadget.o
